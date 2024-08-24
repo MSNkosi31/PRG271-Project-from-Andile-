@@ -2,6 +2,7 @@
 using CommunityApp_PRG_Project_.GroupChat;
 using CommunityApp_PRG_Project_.UserManagement;
 using System;
+using System.Collections.Generic;
 
 
 namespace CommunityApp_PRG_Project_
@@ -77,7 +78,6 @@ namespace CommunityApp_PRG_Project_
             groupChat.StartChat(); // Start the group chat
         }
 
-        static void SignUp()
         static void SignUp(List<User>people)
         {
             Console.Write("Create a username:");
@@ -104,23 +104,10 @@ namespace CommunityApp_PRG_Project_
 
         public static void Login(List<User> people)
         {
-            Console.WriteLine("Login not yet implemented.");
-        }
-
-        static void DisplayAsciiArt()
-        {
-            Console.WriteLine(@"
-           
-    __  ___         ______                                      _ __       
-   /  |/  /_  __   / ____/___  ____ ___  ____ ___  __  ______  (_) /___  __
-  / /|_/ / / / /  / /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / __/ / / /
- / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
-/_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
-       /____/                                                     /____/   
             redo_user:
             Console.Write("Enter your username: "); string username_check = Console.ReadLine();
 
-            redo_pass:
+        redo_pass:
             Console.Write("Enter your password: "); string password_check = Console.ReadLine();
 
             //// Create a new List to store names
@@ -150,7 +137,7 @@ namespace CommunityApp_PRG_Project_
                     Console.WriteLine("Incorrect password, ensure you input the correct password");
                     goto redo_pass;
                 }
-               
+
             }
             else
             {
@@ -158,6 +145,19 @@ namespace CommunityApp_PRG_Project_
                 goto redo_user;
             }
         }
+    
+
+        static void DisplayAsciiArt()
+        {
+            Console.WriteLine(@"
+           
+    __  ___         ______                                      _ __       
+   /  |/  /_  __   / ____/___  ____ ___  ____ ___  __  ______  (_) /___  __
+  / /|_/ / / / /  / /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / __/ / / /
+ / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
+/_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
+       /____/                                                     /____/   "); }
+           
 
         //// Print the list contents
         //foreach (string name in names)
