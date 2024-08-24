@@ -21,6 +21,11 @@ namespace CommunityApp_PRG_Project_
 
         static void Menu(EventManager eventManager)
         {
+            // Set the console text color to green
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            // Display ASCII art at the start
+            DisplayAsciiArt();
             Console.WriteLine("=====================================");
             Console.WriteLine("Main Menu\nTo select an option below, type in the corresponding number provided");
             Console.WriteLine("-------------------------------------");
