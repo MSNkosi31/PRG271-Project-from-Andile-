@@ -56,6 +56,8 @@
     <Compile Include="NeighborhoodWatch\Incident.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserManagement\IMethods.cs" />
+    <Compile Include="UserManagement\LoggedIn.cs" />
     <Compile Include="UserManagement\SecurityManager.cs" />
     <Compile Include="UserManagement\User.cs" />
   </ItemGroup>

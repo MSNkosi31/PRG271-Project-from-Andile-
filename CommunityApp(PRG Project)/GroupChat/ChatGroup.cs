@@ -11,6 +11,7 @@ namespace CommunityApp_PRG_Project_.GroupChat
 
         public void StartChat()
         {
+            Console.WriteLine("===== Group Chat =====");
             Console.WriteLine("Starting chat... Type 'exit' to leave the chat.");
 
             // Start a new thread to read the chat log
