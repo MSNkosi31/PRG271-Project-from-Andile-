@@ -1,0 +1,7 @@
+C:\Users\andil\source\repos\CommunityApp(PRG Project)\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).csproj.AssemblyReference.cache
+C:\Users\andil\source\repos\CommunityApp(PRG Project)\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).csproj.CoreCompileInputs.cache
+C:\Users\andil\source\repos\CommunityApp(PRG Project)\CommunityApp(PRG Project)\bin\Debug\CommunityApp(PRG Project).exe.config
+C:\Users\andil\source\repos\CommunityApp(PRG Project)\CommunityApp(PRG Project)\bin\Debug\CommunityApp(PRG Project).exe
+C:\Users\andil\source\repos\CommunityApp(PRG Project)\CommunityApp(PRG Project)\bin\Debug\CommunityApp(PRG Project).pdb
+C:\Users\andil\source\repos\CommunityApp(PRG Project)\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).exe
+C:\Users\andil\source\repos\CommunityApp(PRG Project)\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).pdb
