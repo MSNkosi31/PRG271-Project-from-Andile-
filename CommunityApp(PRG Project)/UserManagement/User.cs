@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace CommunityApp_PRG_Project_.UserManagement
 {
-    internal class User
+    public class User
     {
+        string username;
+        string password;
+
+        public User()
+        {
+            
+        }
+        public User(string username, string password)
+        {
+            this.username = username;
+            this.password = password;
+        }
+
+        public string Username { get => username; set => username = value; }
+        public string Password { get => password; set => password = value; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using CommunityApp_PRG_Project_.EventManagement;
 using CommunityApp_PRG_Project_.GroupChat;
+using CommunityApp_PRG_Project_.UserManagement;
 using System;
 
 
@@ -19,12 +20,6 @@ namespace CommunityApp_PRG_Project_
 
         static void Menu(EventManager eventManager)
         {
-            // Set the console text color to green
-            Console.ForegroundColor = ConsoleColor.Green;
-
-            // Display ASCII art at the start
-            DisplayAsciiArt();
-
             Console.WriteLine("=====================================");
             Console.WriteLine("Main Menu\nTo select an option below, type in the corresponding number provided");
             Console.WriteLine("-------------------------------------");
@@ -83,6 +78,7 @@ namespace CommunityApp_PRG_Project_
         }
 
         static void SignUp()
+        static void SignUp(List<User>people)
         {
             Console.Write("Create a username:");
             string username = Console.ReadLine();
@@ -95,7 +91,9 @@ namespace CommunityApp_PRG_Project_
             if (precheck_password == repeat_password)
             {
                 string password = precheck_password;
+                new User(username, password);
                 Console.WriteLine("********SignUp Successful********");
+                Login(people);
             }
             else
             {
@@ -104,7 +102,7 @@ namespace CommunityApp_PRG_Project_
             }
         }
 
-        static void Login()
+        public static void Login(List<User> people)
         {
             Console.WriteLine("Login not yet implemented.");
         }
@@ -119,34 +117,89 @@ namespace CommunityApp_PRG_Project_
  / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
 /_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
        /____/                                                     /____/   
+            redo_user:
+            Console.Write("Enter your username: "); string username_check = Console.ReadLine();
 
-            ");
+            redo_pass:
+            Console.Write("Enter your password: "); string password_check = Console.ReadLine();
+
+            //// Create a new List to store names
+            List<string> names = new List<string>();
+            List<string> passwords = new List<string>();
+
+            //// Populate the list with names from Person objects
+            foreach (User person in people)
+            {
+                names.Add(person.Username);
+            }
+
+            foreach (User person in people)
+            {
+                passwords.Add(person.Password);
+            }
+
+            if (names.Contains(username_check))
+            {
+                Console.WriteLine("Username found");
+                if (passwords.Contains(password_check))
+                {
+                    Console.WriteLine("Password correct");
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect password, ensure you input the correct password");
+                    goto redo_pass;
+                }
+               
+            }
+            else
+            {
+                Console.WriteLine("Username does not exist, ensure you input the correct username");
+                goto redo_user;
+            }
         }
+
+        //// Print the list contents
+        //foreach (string name in names)
+        //{
+        //    Console.WriteLine(name);
+        //}
+
 
         static void Main(string[] args)
         {
+
+            List<User> people = new List<User>
+        {
+            new User("Tumi", "adminT"),
+            new User("Andile", "adminA"),
+            new User("Suhil", "adminS"),
+            new User("Reinhard", "adminR")
+        };
             Console.WriteLine("Welcome to Retardville's Community App");
             Console.WriteLine("To sign in press 1 and to login press 2");
         dumdum:
-            int choice;
-            if (int.TryParse(Console.ReadLine(), out choice))
+            string choice = Console.ReadLine();
+            bool isCorrect = int.TryParse(choice, out int result);
+
+            if (isCorrect)
             {
-                switch (choice)
+                switch (result)
                 {
                     case 1:
-                        SignUp();
+                        SignUp(people);
                         break;
                     case 2:
-                        Login();
+                        Login(people);
                         break;
                     default:
                         Console.WriteLine("Select an option between 1 and 2");
                         goto dumdum;
                 }
             }
-            else
+            else 
             {
-                Console.WriteLine("Please enter a valid number.");
+                Console.WriteLine("Incorrect input, utilize numbers e.g'1,2,3,4,5");
                 goto dumdum;
             }
 
