@@ -3,7 +3,10 @@ using CommunityApp_PRG_Project_.GroupChat;
 using CommunityApp_PRG_Project_.UserManagement;
 using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Threading;
+=======
+>>>>>>> 4310fca373fbfa8240e5a5f4af0f4af4c54f2b39
 
 namespace CommunityApp_PRG_Project_
 {
@@ -44,9 +47,20 @@ namespace CommunityApp_PRG_Project_
         }
         static void Menu(EventManager eventManager)
         {
+<<<<<<< HEAD
             Console.WriteLine("===== Main Menu =====");
             Console.WriteLine("To select an option below, type in the corresponding number provided");
 
+=======
+            // Set the console text color to green
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            // Display ASCII art at the start
+            DisplayAsciiArt();
+            Console.WriteLine("=====================================");
+            Console.WriteLine("Main Menu\nTo select an option below, type in the corresponding number provided");
+            Console.WriteLine("-------------------------------------");
+>>>>>>> 4310fca373fbfa8240e5a5f4af0f4af4c54f2b39
             foreach (MainMenu MenuOption in Enum.GetValues(typeof(MainMenu)))
             {
                 string[] splitName = MenuOption.ToString().Split('_');
@@ -105,7 +119,7 @@ namespace CommunityApp_PRG_Project_
             groupChat.StartChat(); // Start the group chat
         }
 
-        static void SignUp(List<User>people)
+        static void SignUp(List<User> people)
         {
             Console.WriteLine("===== Sign up =====");
             Console.Write("Create a username:");
@@ -135,7 +149,10 @@ namespace CommunityApp_PRG_Project_
 
         public static void Login(List<User> people)
         {
+<<<<<<< HEAD
             Console.WriteLine("===== Login =====");
+=======
+>>>>>>> 4310fca373fbfa8240e5a5f4af0f4af4c54f2b39
         redo_user:
             Console.Write("Enter your username: "); string username_check = Console.ReadLine();
 
@@ -179,7 +196,7 @@ namespace CommunityApp_PRG_Project_
                 goto redo_user;
             }
         }
-    
+
 
         static void DisplayAsciiArt()
         {
@@ -189,7 +206,13 @@ namespace CommunityApp_PRG_Project_
   / /|_/ / / / /  / /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / __/ / / /
  / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
 /_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
+<<<<<<< HEAD
        /____/                                                     /____/   "); }
+=======
+       /____/                                                     /____/   ");
+        }
+
+>>>>>>> 4310fca373fbfa8240e5a5f4af0f4af4c54f2b39
 
         static void Main(string[] args)
         {
@@ -224,7 +247,7 @@ namespace CommunityApp_PRG_Project_
                         goto dumdum;
                 }
             }
-            else 
+            else
             {
                 Console.WriteLine("Incorrect input, utilize numbers e.g'1,2,3,4,5");
                 goto dumdum;
@@ -232,10 +255,21 @@ namespace CommunityApp_PRG_Project_
 
             // Initialize EventManager with EventCalendar
             EventCalendar calendar = new EventCalendar();
+            calendar.LoadEventsFromFile();  // Load events from file
+            calendar.LoadRSVPsFromFile();   // Load RSVPs from file
             EventManager eventManager = new EventManager(calendar);
+
+            // Subscribe to the EventAdded event
+            eventManager.EventAdded += OnEventAdded;
 
             // Start the main menu loop
             Menu(eventManager);
+        }
+
+        static void OnEventAdded(Event newEvent)
+        {
+            // Example action when a new event is added
+            Console.WriteLine($"[Notification] New event added: {newEvent.EventName} on {newEvent.EventDate}");
         }
     }
 }
