@@ -3,10 +3,9 @@ using CommunityApp_PRG_Project_.GroupChat;
 using CommunityApp_PRG_Project_.UserManagement;
 using System;
 using System.Collections.Generic;
-<<<<<<< HEAD
 using System.Threading;
-=======
->>>>>>> 4310fca373fbfa8240e5a5f4af0f4af4c54f2b39
+
+
 
 namespace CommunityApp_PRG_Project_
 {
@@ -47,11 +46,11 @@ namespace CommunityApp_PRG_Project_
         }
         static void Menu(EventManager eventManager)
         {
-<<<<<<< HEAD
+
             Console.WriteLine("===== Main Menu =====");
             Console.WriteLine("To select an option below, type in the corresponding number provided");
 
-=======
+
             // Set the console text color to green
             Console.ForegroundColor = ConsoleColor.Green;
 
@@ -60,7 +59,7 @@ namespace CommunityApp_PRG_Project_
             Console.WriteLine("=====================================");
             Console.WriteLine("Main Menu\nTo select an option below, type in the corresponding number provided");
             Console.WriteLine("-------------------------------------");
->>>>>>> 4310fca373fbfa8240e5a5f4af0f4af4c54f2b39
+
             foreach (MainMenu MenuOption in Enum.GetValues(typeof(MainMenu)))
             {
                 string[] splitName = MenuOption.ToString().Split('_');
@@ -149,10 +148,9 @@ namespace CommunityApp_PRG_Project_
 
         public static void Login(List<User> people)
         {
-<<<<<<< HEAD
+
             Console.WriteLine("===== Login =====");
-=======
->>>>>>> 4310fca373fbfa8240e5a5f4af0f4af4c54f2b39
+
         redo_user:
             Console.Write("Enter your username: "); string username_check = Console.ReadLine();
 
@@ -206,13 +204,9 @@ namespace CommunityApp_PRG_Project_
   / /|_/ / / / /  / /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / __/ / / /
  / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
 /_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
-<<<<<<< HEAD
-       /____/                                                     /____/   "); }
-=======
        /____/                                                     /____/   ");
-        }
 
->>>>>>> 4310fca373fbfa8240e5a5f4af0f4af4c54f2b39
+        }
 
         static void Main(string[] args)
         {
