@@ -16,6 +16,12 @@ namespace CommunityApp_PRG_Project_
 
         static void Menu(EventManager eventManager)
         {
+            // Set the console text color to green
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            // Display ASCII art at the start
+            DisplayAsciiArt();
+
             Console.WriteLine("=====================================");
             Console.WriteLine("Main Menu\nTo select an option below, type in the corresponding number provided");
             Console.WriteLine("-------------------------------------");
@@ -87,8 +93,21 @@ namespace CommunityApp_PRG_Project_
         {
             Console.WriteLine("Login not yet implemented.");
         }
+        static void DisplayAsciiArt()
+        {
+            Console.WriteLine(@"
+           
+    __  ___         ______                                      _ __       
+   /  |/  /_  __   / ____/___  ____ ___  ____ ___  __  ______  (_) /___  __
+  / /|_/ / / / /  / /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / __/ / / /
+ / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
+/_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
+       /____/                                                     /____/   
 
-        static void Main(string[] args)
+            ");
+        }
+
+            static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Retardville's Community App");
             Console.WriteLine("To sign in press 1 and to login press 2");
