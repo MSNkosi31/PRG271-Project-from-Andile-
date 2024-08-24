@@ -77,19 +77,30 @@ namespace CommunityApp_PRG_Project_.EventManagement
 
         private void RSVPToEvent()
         {
-            Console.Write("Enter the name of the event you want to RSVP to: ");
-            string eventName = Console.ReadLine();
-            Event selectedEvent = eventCalendar.GetEvent(eventName);
-
-            if (selectedEvent != null)
+            if (eventCalendar.Events.Count == 0)
             {
+                Console.WriteLine("No events available to RSVP.");
+                return;
+            }
+
+            Console.WriteLine("Available Events:");
+            for (int i = 0; i < eventCalendar.Events.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {eventCalendar.Events[i].EventName} - {eventCalendar.Events[i].EventDate}");
+            }
+
+            Console.Write("Enter the number of the event you want to RSVP to: ");
+            int eventChoice;
+            if (int.TryParse(Console.ReadLine(), out eventChoice) && eventChoice > 0 && eventChoice <= eventCalendar.Events.Count)
+            {
+                Event selectedEvent = eventCalendar.Events[eventChoice - 1];
                 Console.Write("Enter your username: ");
                 string username = Console.ReadLine();
                 selectedEvent.AddRSVP(username);
             }
             else
             {
-                Console.WriteLine("Event not found.");
+                Console.WriteLine("Invalid choice. Please try again.");
             }
         }
     }
