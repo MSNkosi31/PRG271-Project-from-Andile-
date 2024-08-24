@@ -1,5 +1,7 @@
-﻿using System;
-using CommunityApp_PRG_Project_.EventManagement; // Import the EventManagement namespace
+﻿using CommunityApp_PRG_Project_.EventManagement;
+using CommunityApp_PRG_Project_.GroupChat;
+using System;
+
 
 namespace CommunityApp_PRG_Project_
 {
@@ -11,6 +13,7 @@ namespace CommunityApp_PRG_Project_
             Events,
             Neighbourhood_Watch,
             Job_Finder,
+            Group_Chat,
             Exit
         }
 
@@ -52,6 +55,10 @@ namespace CommunityApp_PRG_Project_
                         break;
 
                     case 5:
+                        StartGroupChat(); // Call method to start group chat
+                        break;
+
+                    case 6:
                         Console.WriteLine("Exiting...");
                         return;
 
@@ -65,6 +72,14 @@ namespace CommunityApp_PRG_Project_
                 Console.WriteLine("Please enter a valid number.");
             }
             Menu(eventManager); // Re-display the menu after an action
+        }
+
+        static void StartGroupChat()
+        {
+            // Initialize the group chat
+            HierarchicalGroupChat groupChat = new HierarchicalGroupChat();
+            groupChat.AddGroup("City Group"); // Example group
+            groupChat.StartChat(); // Start the group chat
         }
 
         static void SignUp()
@@ -93,6 +108,7 @@ namespace CommunityApp_PRG_Project_
         {
             Console.WriteLine("Login not yet implemented.");
         }
+
         static void DisplayAsciiArt()
         {
             Console.WriteLine(@"
@@ -107,7 +123,7 @@ namespace CommunityApp_PRG_Project_
             ");
         }
 
-            static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Retardville's Community App");
             Console.WriteLine("To sign in press 1 and to login press 2");
