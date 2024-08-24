@@ -21,3 +21,4 @@ namespace CommunityApp_PRG_Project_.GroupChat
         }
     }
 }
+ 

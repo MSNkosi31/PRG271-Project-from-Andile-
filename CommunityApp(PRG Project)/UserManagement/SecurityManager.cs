@@ -8,5 +8,6 @@ namespace CommunityApp_PRG_Project_.UserManagement
 {
     internal class SecurityManager
     {
+
     }
 }

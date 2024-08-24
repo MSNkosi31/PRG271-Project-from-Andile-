@@ -1,34 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\",
+  "WorkspaceRootPath": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\eventmanagement\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\eventmanagement\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\tumza\\onedrive\\desktop\\prg271-project-from-andile-\\communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\tumza\\onedrive\\desktop\\prg271-project-from-andile-\\communityapp(prg project)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\eventmanagement\\eventcalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\eventmanagement\\eventcalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\tumza\\onedrive\\desktop\\prg271-project-from-andile-\\communityapp(prg project)\\usermanagement\\loggedin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\usermanagement\\loggedin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\eventmanagement\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\communityapp(prg project)\\eventmanagement\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\eventmanagement\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\groupchat\\heirarchialgroupchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\groupchat\\heirarchialgroupchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\tumza\\onedrive\\desktop\\prg271-project-from-andile-\\communityapp(prg project)\\usermanagement\\securitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\usermanagement\\securitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\groupchat\\chatgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\tumza\\onedrive\\desktop\\prg271-project-from-andile-\\communityapp(prg project)\\usermanagement\\imethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\usermanagement\\imethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\communityapp(prg project)\\eventmanagement\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\eventmanagement\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\communityapp(prg project)\\groupchat\\chatgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\groupchat\\chatgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\groupchat\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\communityapp(prg project)\\groupchat\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\groupchat\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\communityapp(prg project)\\eventmanagement\\eventcalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\eventmanagement\\eventcalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\communityapp(prg project)\\groupchat\\heirarchialgroupchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\groupchat\\heirarchialgroupchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,12 +57,76 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAgwEUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T22:07:17.036Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "LoggedIn.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\LoggedIn.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\UserManagement\\LoggedIn.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\LoggedIn.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\UserManagement\\LoggedIn.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T22:07:04.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IMethods.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\IMethods.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\UserManagement\\IMethods.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\IMethods.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\UserManagement\\IMethods.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T22:06:58.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SecurityManager.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\SecurityManager.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\UserManagement\\SecurityManager.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\SecurityManager.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\UserManagement\\SecurityManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T22:06:52.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "EventCalendar.cs",
-              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs",
-              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAgwFkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -57,11 +137,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\Program.cs",
-              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\Program.cs",
-              "ViewState": "AQIAAL8AAAAAAAAAAAAiwNQAAAAWAAAA",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAqwJQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T13:34:03.027Z",
               "EditorCaption": ""
@@ -70,61 +150,60 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\Event.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\Event.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\EventManagement\\Event.cs",
-              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\Event.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\Event.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\EventManagement\\Event.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAmwDcAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAkwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T15:43:06.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "EventManager.cs",
-              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventManager.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventManager.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\EventManagement\\EventManager.cs",
-              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventManager.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventManager.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\EventManagement\\EventManager.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAmwGIAAAANAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAA3wGIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T14:00:06.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Message.cs",
-              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\Message.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\Message.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\GroupChat\\Message.cs",
-              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\Message.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\Message.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\GroupChat\\Message.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T14:50:22.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "HeirarchialGroupChat.cs",
-              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
-              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAqwDoAAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwCEAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T14:50:04.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T14:50:04.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ChatGroup.cs",
-              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
-              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

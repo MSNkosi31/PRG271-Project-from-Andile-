@@ -118,82 +118,8 @@ namespace CommunityApp_PRG_Project_
             groupChat.StartChat(); // Start the group chat
         }
 
-        static void SignUp(List<User> people)
-        {
-            Console.WriteLine("===== Sign up =====");
-            Console.Write("Create a username:");
-            string username = Console.ReadLine();
-
-        passrepeat:
-            Console.Write("Create password: ");
-            string precheck_password = Console.ReadLine();
-            Console.Write("Repeat your password: ");
-            string repeat_password = Console.ReadLine();
-            if (precheck_password == repeat_password)
-            {
-                string password = precheck_password;
-                new User(username, password);
-                Console.Clear();
-                Console.WriteLine("********SignUp Successful********");
-                Thread.Sleep(2000);
-                Console.Clear();
-                Login(people);
-            }
-            else
-            {
-                Console.WriteLine("Passwords don't match, ensure you input the same password");
-                goto passrepeat;
-            }
-        }
-
-        public static void Login(List<User> people)
-        {
-
-            Console.WriteLine("===== Login =====");
-
-        redo_user:
-            Console.Write("Enter your username: "); string username_check = Console.ReadLine();
-
-        redo_pass:
-            Console.Write("Enter your password: "); string password_check = Console.ReadLine();
-
-           
-            List<string> names = new List<string>();
-            List<string> passwords = new List<string>();
-
-           
-            foreach (User person in people)
-            {
-                names.Add(person.Username);
-            }
-
-            foreach (User person in people)
-            {
-                passwords.Add(person.Password);
-            }
-
-            if (names.Contains(username_check))
-            {
-                if (passwords.Contains(password_check))
-                {
-                    Console.Clear();
-                    Console.WriteLine("********Login Successful********");
-                    Thread.Sleep(2000);
-                    Console.Clear();
-                }
-                else
-                {
-                    Console.WriteLine("Incorrect password, ensure you input the correct password");
-                    goto redo_pass;
-                }
-
-            }
-            else
-            {
-                Console.WriteLine("Username does not exist, ensure you input the correct username");
-                goto redo_user;
-            }
-        }
+        
+        
 
 
         static void DisplayAsciiArt()
@@ -212,40 +138,8 @@ namespace CommunityApp_PRG_Project_
         {
             DisplayAsciiArt();
 
-            List<User> people = new List<User>
-        {
-            new User("Tumi", "adminT"),
-            new User("Andile", "adminA"),
-            new User("Suhil", "adminS"),
-            new User("Reinhard", "adminR"),
-            new User("1", "1")
-        };
-            Console.WriteLine("Welcome to Retardville's Community App");
-            Console.WriteLine("To sign in press 1 and to login press 2");
-        dumdum:
-            string choice = Console.ReadLine();
-            bool isCorrect = int.TryParse(choice, out int result);
-
-            if (isCorrect)
-            {
-                switch (result)
-                {
-                    case 1:
-                        SignUp(people);
-                        break;
-                    case 2:
-                        Login(people);
-                        break;
-                    default:
-                        Console.WriteLine("Select an option between 1 and 2");
-                        goto dumdum;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Incorrect input, utilize numbers e.g'1,2,3,4,5");
-                goto dumdum;
-            }
+           
+        
 
             // Initialize EventManager with EventCalendar
             EventCalendar calendar = new EventCalendar();
