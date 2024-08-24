@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CommunityApp_PRG_Project_.EventManagement; // Import the EventManagement namespace
 
 namespace CommunityApp_PRG_Project_
 {
@@ -15,38 +12,53 @@ namespace CommunityApp_PRG_Project_
             Neighbourhood_Watch,
             Job_Finder,
             Exit
-
         }
-        static void Menu()
+
+        static void Menu(EventManager eventManager)
         {
             Console.WriteLine("=====================================");
-            Console.WriteLine("Menu Main\nTo select an option below, type in the corrsponding number provided");
+            Console.WriteLine("Main Menu\nTo select an option below, type in the corresponding number provided");
             Console.WriteLine("-------------------------------------");
             foreach (MainMenu MenuOption in Enum.GetValues(typeof(MainMenu)))
             {
                 Console.WriteLine("To access the {0} function, press {1}", MenuOption.ToString(), (int)MenuOption);
             }
 
-            int option = int.Parse(Console.ReadLine());
-
-            switch (option)
+            int option;
+            if (int.TryParse(Console.ReadLine(), out option))
             {
-                case 1:
-                    Console.WriteLine();
-                    break;
+                switch (option)
+                {
+                    case 1:
+                        Console.WriteLine("User Management not yet implemented.");
+                        break;
 
-                case 2:
-                    Console.WriteLine();
-                    break;
+                    case 2:
+                        eventManager.EventMenu();
+                        break;
 
-                case 3:
-                    Console.WriteLine();
-                    break;
+                    case 3:
+                        Console.WriteLine("Neighbourhood Watch not yet implemented.");
+                        break;
 
-                case 4:
-                    Console.WriteLine("Exiting...");
-                    break;
+                    case 4:
+                        Console.WriteLine("Job Finder not yet implemented.");
+                        break;
+
+                    case 5:
+                        Console.WriteLine("Exiting...");
+                        return;
+
+                    default:
+                        Console.WriteLine("Invalid option. Please try again.");
+                        break;
+                }
             }
+            else
+            {
+                Console.WriteLine("Please enter a valid number.");
+            }
+            Menu(eventManager); // Re-display the menu after an action
         }
 
         static void SignUp()
@@ -55,49 +67,60 @@ namespace CommunityApp_PRG_Project_
             string username = Console.ReadLine();
 
         passrepeat:
-            Console.Write("Create password: "); string precheck_password = Console.ReadLine();
-            Console.Write("Repeat your password: "); string repeat_password = Console.ReadLine();
+            Console.Write("Create password: ");
+            string precheck_password = Console.ReadLine();
+            Console.Write("Repeat your password: ");
+            string repeat_password = Console.ReadLine();
             if (precheck_password == repeat_password)
             {
                 string password = precheck_password;
-
-                
                 Console.WriteLine("********SignUp Successful********");
-                Menu();
             }
             else
             {
                 Console.WriteLine("Passwords don't match, ensure you input the same password");
                 goto passrepeat;
             }
-
         }
 
         static void Login()
         {
-
-
+            Console.WriteLine("Login not yet implemented.");
         }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Retardville's Community App");
             Console.WriteLine("To sign in press 1 and to login press 2");
         dumdum:
-            int choice = int.Parse(Console.ReadLine());
-
-            switch (choice)
+            int choice;
+            if (int.TryParse(Console.ReadLine(), out choice))
             {
-                case 1:
-                    SignUp();
-                    break;
-                case 2:
-                    Login();
-                    break;
-                default:
-                    Console.WriteLine("Select an option between 1 and 2");
-                    goto dumdum;
+                switch (choice)
+                {
+                    case 1:
+                        SignUp();
+                        break;
+                    case 2:
+                        Login();
+                        break;
+                    default:
+                        Console.WriteLine("Select an option between 1 and 2");
+                        goto dumdum;
+                }
             }
-            Console.ReadLine();
+            else
+            {
+                Console.WriteLine("Please enter a valid number.");
+                goto dumdum;
+            }
+
+            // Initialize EventManager with EventCalendar
+            EventCalendar calendar = new EventCalendar();
+            EventManager eventManager = new EventManager(calendar);
+
+            // Start the main menu loop
+            Menu(eventManager);
         }
     }
 }

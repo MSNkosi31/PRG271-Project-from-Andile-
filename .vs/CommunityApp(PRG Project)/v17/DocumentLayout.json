@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\eventmanagement\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\eventmanagement\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\eventmanagement\\eventcalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\eventmanagement\\eventcalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\eventmanagement\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\eventmanagement\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\groupchat\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\groupchat\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\groupchat\\heirarchialgroupchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\groupchat\\heirarchialgroupchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\groupchat\\chatgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\groupchat\\chatgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\jobfinder\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\jobfinder\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\jobfinder\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\jobfinder\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\jobfinder\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\jobfinder\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\neighborhoodwatch\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\neighborhoodwatch\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\neighborhoodwatch\\alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\neighborhoodwatch\\alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\usermanagement\\securitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\usermanagement\\securitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventCalendar.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs*",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\EventManagement\\EventCalendar.cs*",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:15:20.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\Event.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\EventManagement\\Event.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\Event.cs*",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\EventManagement\\Event.cs*",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA0wCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:15:09.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventManager.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventManager.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\EventManagement\\EventManager.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\EventManagement\\EventManager.cs*",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\EventManagement\\EventManager.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:15:28.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\Message.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\GroupChat\\Message.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\Message.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\GroupChat\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:14:57.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HeirarchialGroupChat.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\GroupChat\\HeirarchialGroupChat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:14:50.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChatGroup.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\GroupChat\\ChatGroup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:14:32.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Applicant.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Applicant.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\JobFinder\\Applicant.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Applicant.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\JobFinder\\Applicant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:14:19.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\Program.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs*",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:10:03.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Employer.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Employer.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\JobFinder\\Employer.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Employer.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\JobFinder\\Employer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:14:11.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Job.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Job.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\JobFinder\\Job.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Job.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\JobFinder\\Job.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:14:03.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Incident.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\NeighborhoodWatch\\Incident.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\NeighborhoodWatch\\Incident.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\NeighborhoodWatch\\Incident.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\NeighborhoodWatch\\Incident.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:13:45.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Alert.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\NeighborhoodWatch\\Alert.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\NeighborhoodWatch\\Alert.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\NeighborhoodWatch\\Alert.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\NeighborhoodWatch\\Alert.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:13:37.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:13:29.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SecurityManager.cs",
+              "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\SecurityManager.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\UserManagement\\SecurityManager.cs",
+              "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\SecurityManager.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\UserManagement\\SecurityManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:13:21.119Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

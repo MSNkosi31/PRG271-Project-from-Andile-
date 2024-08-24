@@ -43,11 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventManagement\Event.cs" />
+    <Compile Include="EventManagement\EventCalendar.cs" />
+    <Compile Include="EventManagement\EventManager.cs" />
+    <Compile Include="GroupChat\ChatGroup.cs" />
+    <Compile Include="GroupChat\HeirarchialGroupChat.cs" />
+    <Compile Include="GroupChat\Message.cs" />
+    <Compile Include="JobFinder\Applicant.cs" />
+    <Compile Include="JobFinder\Employer.cs" />
+    <Compile Include="JobFinder\Job.cs" />
+    <Compile Include="NeighborhoodWatch\Alert.cs" />
+    <Compile Include="NeighborhoodWatch\Incident.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserManagement\SecurityManager.cs" />
+    <Compile Include="UserManagement\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
