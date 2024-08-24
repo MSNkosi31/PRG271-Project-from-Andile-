@@ -4,7 +4,6 @@ using CommunityApp_PRG_Project_.UserManagement;
 using System;
 using System.Collections.Generic;
 
-
 namespace CommunityApp_PRG_Project_
 {
     internal class Program
@@ -83,7 +82,7 @@ namespace CommunityApp_PRG_Project_
             groupChat.StartChat(); // Start the group chat
         }
 
-        static void SignUp(List<User>people)
+        static void SignUp(List<User> people)
         {
             Console.Write("Create a username:");
             string username = Console.ReadLine();
@@ -109,7 +108,7 @@ namespace CommunityApp_PRG_Project_
 
         public static void Login(List<User> people)
         {
-            redo_user:
+        redo_user:
             Console.Write("Enter your username: "); string username_check = Console.ReadLine();
 
         redo_pass:
@@ -150,7 +149,7 @@ namespace CommunityApp_PRG_Project_
                 goto redo_user;
             }
         }
-    
+
 
         static void DisplayAsciiArt()
         {
@@ -161,14 +160,8 @@ namespace CommunityApp_PRG_Project_
   / /|_/ / / / /  / /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / __/ / / /
  / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
 /_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
-       /____/                                                     /____/   "); }
-           
-
-        //// Print the list contents
-        //foreach (string name in names)
-        //{
-        //    Console.WriteLine(name);
-        //}
+       /____/                                                     /____/   ");
+        }
 
 
         static void Main(string[] args)
@@ -202,7 +195,7 @@ namespace CommunityApp_PRG_Project_
                         goto dumdum;
                 }
             }
-            else 
+            else
             {
                 Console.WriteLine("Incorrect input, utilize numbers e.g'1,2,3,4,5");
                 goto dumdum;
@@ -210,10 +203,21 @@ namespace CommunityApp_PRG_Project_
 
             // Initialize EventManager with EventCalendar
             EventCalendar calendar = new EventCalendar();
+            calendar.LoadEventsFromFile();  // Load events from file
+            calendar.LoadRSVPsFromFile();   // Load RSVPs from file
             EventManager eventManager = new EventManager(calendar);
+
+            // Subscribe to the EventAdded event
+            eventManager.EventAdded += OnEventAdded;
 
             // Start the main menu loop
             Menu(eventManager);
+        }
+
+        static void OnEventAdded(Event newEvent)
+        {
+            // Example action when a new event is added
+            Console.WriteLine($"[Notification] New event added: {newEvent.EventName} on {newEvent.EventDate}");
         }
     }
 }

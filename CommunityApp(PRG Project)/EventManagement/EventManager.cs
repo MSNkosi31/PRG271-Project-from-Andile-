@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CommunityApp_PRG_Project_.EventManagement
 {
     public class EventManager
     {
         private EventCalendar eventCalendar;
+
+        // Define a delegate for event added notification
+        public delegate void EventAddedHandler(Event newEvent);
+
+        // Define an event based on the delegate
+        public event EventAddedHandler EventAdded;
 
         public EventManager(EventCalendar calendar)
         {
@@ -68,6 +71,9 @@ namespace CommunityApp_PRG_Project_.EventManagement
             {
                 Event newEvent = new Event(eventName, eventDate);
                 eventCalendar.AddEvent(newEvent);
+
+                // Trigger the EventAdded event
+                OnEventAdded(newEvent);
             }
             else
             {
@@ -77,30 +83,28 @@ namespace CommunityApp_PRG_Project_.EventManagement
 
         private void RSVPToEvent()
         {
-            if (eventCalendar.Events.Count == 0)
-            {
-                Console.WriteLine("No events available to RSVP.");
-                return;
-            }
+            Console.Write("Enter the name of the event you want to RSVP to: ");
+            string eventName = Console.ReadLine();
+            Event selectedEvent = eventCalendar.GetEvent(eventName);
 
-            Console.WriteLine("Available Events:");
-            for (int i = 0; i < eventCalendar.Events.Count; i++)
+            if (selectedEvent != null)
             {
-                Console.WriteLine($"{i + 1}. {eventCalendar.Events[i].EventName} - {eventCalendar.Events[i].EventDate}");
-            }
-
-            Console.Write("Enter the number of the event you want to RSVP to: ");
-            int eventChoice;
-            if (int.TryParse(Console.ReadLine(), out eventChoice) && eventChoice > 0 && eventChoice <= eventCalendar.Events.Count)
-            {
-                Event selectedEvent = eventCalendar.Events[eventChoice - 1];
                 Console.Write("Enter your username: ");
                 string username = Console.ReadLine();
                 selectedEvent.AddRSVP(username);
             }
             else
             {
-                Console.WriteLine("Invalid choice. Please try again.");
+                Console.WriteLine("Event not found.");
+            }
+        }
+
+        protected virtual void OnEventAdded(Event newEvent)
+        {
+            // Check if there are any subscribers
+            if (EventAdded != null)
+            {
+                EventAdded.Invoke(newEvent);
             }
         }
     }
