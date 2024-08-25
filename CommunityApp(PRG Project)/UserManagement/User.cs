@@ -33,7 +33,7 @@ namespace CommunityApp_PRG_Project_.UserManagement
             Console.WriteLine("Create a password: ");
             password = Console.ReadLine();
 
-            using (StreamWriter sw = new StreamWriter(File.Create("login.txt")))
+            using (StreamWriter sw = new StreamWriter("login.txt", true))
             {
                 sw.WriteLine(username);
                 sw.WriteLine(password);
@@ -41,7 +41,7 @@ namespace CommunityApp_PRG_Project_.UserManagement
             }
 
             Console.WriteLine("Welcome.....");
-            Console.Read();
+            //Console.Read();
         }
 
         public void UserLogin()
@@ -67,7 +67,7 @@ namespace CommunityApp_PRG_Project_.UserManagement
                 Console.WriteLine("Login Failed");
             }
 
-            Console.Read();
+           //6 Console.Read();
         }
     }
 }

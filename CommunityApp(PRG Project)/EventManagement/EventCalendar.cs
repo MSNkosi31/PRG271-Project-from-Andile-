@@ -7,12 +7,64 @@ namespace CommunityApp_PRG_Project_.EventManagement
 {
     public class EventCalendar
     {
-        // This property is already defined correctly
+        private const string EventFilePath = "events.txt";
+        private const string RSVPFilePath = "rsvps.txt";
+
         public List<Event> Events { get; private set; } = new List<Event>();
+
+        public void LoadEventsFromFile()
+        {
+            if (File.Exists(EventFilePath))
+            {
+                Events.Clear();
+                string[] lines = File.ReadAllLines(EventFilePath);
+                foreach (var line in lines)
+                {
+                    var loadedEvent = Event.FromString(line);
+                    if (loadedEvent != null)
+                    {
+                        Events.Add(loadedEvent);
+                    }
+                }
+            }
+        }
+
+        public void SaveEventToFile(Event newEvent)
+        {
+            using (StreamWriter sw = new StreamWriter(EventFilePath, true))
+            {
+                sw.WriteLine(newEvent.ToString());
+            }
+        }
+
+        public void LoadRSVPsFromFile()
+        {
+            if (File.Exists(RSVPFilePath))
+            {
+                string[] lines = File.ReadAllLines(RSVPFilePath);
+                foreach (var line in lines)
+                {
+                    var parts = line.Split(',');
+                    if (parts.Length == 3)
+                    {
+                        var eventName = parts[0];
+                        var eventDate = DateTime.Parse(parts[1]);
+                        var username = parts[2];
+
+                        var existingEvent = Events.FirstOrDefault(e => e.EventName == eventName && e.EventDate == eventDate);
+                        if (existingEvent != null)
+                        {
+                            existingEvent.RSVPs.Add(username);
+                        }
+                    }
+                }
+            }
+        }
 
         public void AddEvent(Event newEvent)
         {
-            Events.Add(newEvent);  // Use the Events property
+            Events.Add(newEvent);
+            SaveEventToFile(newEvent);
             Console.WriteLine($"Event '{newEvent.EventName}' added for {newEvent.EventDate}.");
         }
 
@@ -47,42 +99,6 @@ namespace CommunityApp_PRG_Project_.EventManagement
             {
                 var timeUntilEvent = e.GetTimeUntilEvent();
                 Console.WriteLine($"{e.EventName} - {e.EventDate} ({timeUntilEvent.Days} days, {timeUntilEvent.Hours} hours remaining)");
-            }
-        }
-
-        public void LoadEventsFromFile()
-        {
-            if (File.Exists("events.txt"))
-            {
-                string[] lines = File.ReadAllLines("events.txt");
-                foreach (var line in lines)
-                {
-                    var parts = line.Split(new[] { ", " }, StringSplitOptions.None);
-                    var eventName = parts[0].Replace("Event: ", "");
-                    var eventDate = DateTime.Parse(parts[1].Replace("Date: ", ""));
-
-                    Events.Add(new Event(eventName, eventDate));
-                }
-            }
-        }
-
-        public void LoadRSVPsFromFile()
-        {
-            if (File.Exists("rsvps.txt"))
-            {
-                string[] lines = File.ReadAllLines("rsvps.txt");
-                foreach (var line in lines)
-                {
-                    var parts = line.Split(new[] { ", " }, StringSplitOptions.None);
-                    var eventName = parts[0].Replace("Event: ", "");
-                    var rsvpName = parts[1].Replace("RSVP: ", "");
-
-                    var existingEvent = GetEvent(eventName);
-                    if (existingEvent != null)
-                    {
-                        existingEvent.RSVPs.Add(rsvpName);
-                    }
-                }
             }
         }
     }
