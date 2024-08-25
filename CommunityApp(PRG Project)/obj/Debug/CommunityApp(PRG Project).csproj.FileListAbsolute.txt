@@ -19,3 +19,10 @@ C:\Users\andil\Source\Repos\MSNkosi31\PRG271-Project-from-Andile-\CommunityApp(P
 C:\Users\andil\Source\Repos\MSNkosi31\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).csproj.CoreCompileInputs.cache
 C:\Users\andil\Source\Repos\MSNkosi31\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).exe
 C:\Users\andil\Source\Repos\MSNkosi31\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).pdb
+C:\Users\tumza\OneDrive\Desktop\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\bin\Debug\CommunityApp(PRG Project).exe.config
+C:\Users\tumza\OneDrive\Desktop\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\bin\Debug\CommunityApp(PRG Project).exe
+C:\Users\tumza\OneDrive\Desktop\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\bin\Debug\CommunityApp(PRG Project).pdb
+C:\Users\tumza\OneDrive\Desktop\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).csproj.AssemblyReference.cache
+C:\Users\tumza\OneDrive\Desktop\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).csproj.CoreCompileInputs.cache
+C:\Users\tumza\OneDrive\Desktop\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).exe
+C:\Users\tumza\OneDrive\Desktop\PRG271-Project-from-Andile-\CommunityApp(PRG Project)\obj\Debug\CommunityApp(PRG Project).pdb

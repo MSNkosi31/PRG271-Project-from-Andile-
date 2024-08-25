@@ -7,10 +7,7 @@ namespace CommunityApp_PRG_Project_.EventManagement
     {
         private EventCalendar eventCalendar;
 
-        // Define a delegate for event added notification
         public delegate void EventAddedHandler(Event newEvent);
-
-        // Define an event based on the delegate
         public event EventAddedHandler EventAdded;
 
         public EventManager(EventCalendar calendar)
@@ -45,7 +42,7 @@ namespace CommunityApp_PRG_Project_.EventManagement
                         break;
 
                     case 4:
-                        return;  // Go back to the main menu
+                        return;
                     default:
                         Console.WriteLine("Invalid option. Please try again.");
                         break;
@@ -56,7 +53,6 @@ namespace CommunityApp_PRG_Project_.EventManagement
                 Console.WriteLine("Please enter a valid number.");
             }
 
-            // Loop back to the event menu
             EventMenu();
         }
 
@@ -71,8 +67,6 @@ namespace CommunityApp_PRG_Project_.EventManagement
             {
                 Event newEvent = new Event(eventName, eventDate);
                 eventCalendar.AddEvent(newEvent);
-
-                // Trigger the EventAdded event
                 OnEventAdded(newEvent);
             }
             else
@@ -85,7 +79,6 @@ namespace CommunityApp_PRG_Project_.EventManagement
         {
             Console.WriteLine("\n===== RSVP to an Event =====");
 
-            // Display the list of available events with numbers
             if (eventCalendar.Events.Count == 0)
             {
                 Console.WriteLine("There are no events available to RSVP.");
@@ -113,14 +106,9 @@ namespace CommunityApp_PRG_Project_.EventManagement
             }
         }
 
-
         protected virtual void OnEventAdded(Event newEvent)
         {
-            // Check if there are any subscribers
-            if (EventAdded != null)
-            {
-                EventAdded.Invoke(newEvent);
-            }
+            EventAdded?.Invoke(newEvent);
         }
     }
 }

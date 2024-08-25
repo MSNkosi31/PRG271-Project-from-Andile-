@@ -15,7 +15,6 @@ namespace CommunityApp_PRG_Project_.EventManagement
         {
             EventName = eventName;
             EventDate = eventDate;
-            SaveEventToFile();  // Save the event to the file when it's created
         }
 
         public void AddRSVP(string username)
@@ -24,7 +23,7 @@ namespace CommunityApp_PRG_Project_.EventManagement
             {
                 RSVPs.Add(username);
                 Console.WriteLine($"{username} has RSVPed for {EventName}.");
-                SaveRSVPToFile(username);  // Save the RSVP to the file when added
+                SaveRSVPToFile(username);
             }
             else
             {
@@ -32,25 +31,36 @@ namespace CommunityApp_PRG_Project_.EventManagement
             }
         }
 
-        private void SaveEventToFile()
-        {
-            using (StreamWriter sw = new StreamWriter("events.txt", true))
-            {
-                sw.WriteLine($"Event: {EventName}, Date: {EventDate}");
-            }
-        }
-
         private void SaveRSVPToFile(string username)
         {
             using (StreamWriter sw = new StreamWriter("rsvps.txt", true))
             {
-                sw.WriteLine($"Event: {EventName}, RSVP: {username}");
+                sw.WriteLine($"{EventName},{EventDate},{username}");
             }
         }
 
         public TimeSpan GetTimeUntilEvent()
         {
             return EventDate - DateTime.Now;
+        }
+
+        public override string ToString()
+        {
+            return $"{EventName},{EventDate}";
+        }
+
+        public static Event FromString(string eventString)
+        {
+            var parts = eventString.Split(',');
+            if (parts.Length >= 2)
+            {
+                string eventName = parts[0];
+                if (DateTime.TryParse(parts[1], out DateTime eventDate))
+                {
+                    return new Event(eventName, eventDate);
+                }
+            }
+            return null;
         }
     }
 }

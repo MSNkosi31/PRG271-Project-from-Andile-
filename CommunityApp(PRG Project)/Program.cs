@@ -153,6 +153,10 @@ namespace CommunityApp_PRG_Project_
                         goto passrepeat;
                     }
                 }
+                Console.WriteLine("Passwords don't match, ensure you input the same password");
+                goto passrepeat;
+            }
+        }
 
 
                 public static void Login(List<User> people)
@@ -205,10 +209,6 @@ namespace CommunityApp_PRG_Project_
   / /|_/ / / / /  / /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / __/ / / /
  / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
 /_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
-       /____/                                                     /____/   ");
-
-                }
-
                 static void Main(string[] args)
                 {
 
@@ -225,7 +225,7 @@ namespace CommunityApp_PRG_Project_
                 dumdum:
                     string choice = Console.ReadLine();
                     bool isCorrect = int.TryParse(choice, out int result);
-
+            Console.WriteLine("To sign in press 1 and to login press 2");
                     if (isCorrect)
                     {
                         switch (result)
@@ -264,12 +264,16 @@ namespace CommunityApp_PRG_Project_
                         Console.WriteLine("Incorrect input, utilize numbers e.g'1,2,3,4,5");
                         goto dumdum;
                     }
-
+            {
                     // Initialize EventManager with EventCalendar
                     EventCalendar calendar = new EventCalendar();
                     calendar.LoadEventsFromFile();  // Load events from file
                     calendar.LoadRSVPsFromFile();   // Load RSVPs from file
                     EventManager eventManager = new EventManager(calendar);
+            EventCalendar calendar = new EventCalendar();
+            calendar.LoadEventsFromFile();  // Load events from file
+            calendar.LoadRSVPsFromFile();   // Load RSVPs from file
+            EventManager eventManager = new EventManager(calendar);
 
                     // Subscribe to the EventAdded event
                     eventManager.EventAdded += OnEventAdded;
