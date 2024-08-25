@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace CommunityApp_PRG_Project_.UserManagement
 {
-    public class User
+    public class User:IMethods
     {
         string username;
         string password;
 
-        
+
         public User()
         {
             
@@ -26,6 +26,10 @@ namespace CommunityApp_PRG_Project_.UserManagement
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
 
+        public void ShowDetails()
+        { 
+            
+        }
         public static (string, string) SignUp()
         {
             Console.WriteLine("===== Sign up =====");
@@ -51,7 +55,43 @@ namespace CommunityApp_PRG_Project_.UserManagement
             }
         }
 
-        public static void Login(List<User> people)
+
+        public static void UserManage()
+        {
+            Console.WriteLine("===== Profile Management =====");
+
+            Console.WriteLine("To select an option below, type in the corresponding number provided");
+
+            foreach (UserMenu MenuOption in Enum.GetValues(typeof(UserMenu)))
+            {
+                string[] splitName = MenuOption.ToString().Replace('_', ' ');
+
+                Console.WriteLine("To {0} function, press {1}", splitName, (int)MenuOption);
+            }
+            int option;
+            if (int.TryParse(Console.ReadLine(), out option))
+            {
+                switch (option)
+                {
+                    case 1:
+                        User.ShowDetails();
+                        break;
+
+                    case 2:
+                        Console.WriteLine();
+                        break;
+
+                    case 3:
+                        Console.WriteLine();
+                        break;
+
+                    case 4:
+                        return;
+                }
+            }
+        }
+
+        public static (string,string) Login(List<User> people)
         {
             Console.WriteLine("===== Login =====");
 
@@ -59,39 +99,27 @@ namespace CommunityApp_PRG_Project_.UserManagement
             Console.Write("Enter your username: ");
             string username_check = Console.ReadLine();
 
-        redo_pass:
             Console.Write("Enter your password: ");
             string password_check = Console.ReadLine();
 
-            // Find the user in the list
-            User foundUser = people.FirstOrDefault(user => user.Username == username_check);
+           
+            User foundUser = people.FirstOrDefault(user => user.Username == username_check);//Searching for the inputted sername from the list, creates an obj based on my User class using the username found through the search
 
-            if (foundUser != null)
+            if (foundUser != null && foundUser.Password == password_check) //Cheacking if the found user obj is empty and if the password of the found user corrolates to the inputted password
             {
-                if (foundUser.Password == password_check)
-                {
-                    User loggeduser = new User();
-                    loggeduser.Username = username_check;
-                    loggeduser.Password = password_check;
-
-                    Console.Clear();
-                    Console.WriteLine("******** Login Successful ********");
-                    Thread.Sleep(2000);
-                    Console.Clear();
-                }
-                else
-                {
-                    Console.WriteLine("Incorrect password, ensure you input the correct password.");
-                    goto redo_pass;
-                }
+                Console.Clear();
+                Console.WriteLine("******** Login Successful ********");
+                Thread.Sleep(2000);
+                Console.Clear();
+                return (username_check, password_check);
             }
             else
             {
-                Console.WriteLine("Username does not exist, ensure you input the correct username.");
-                goto redo_user;
+                Console.WriteLine("Incorrect username or password , ensure you input the correct details.");
+                goto redo_pass;
+                }
             }
         }
     }
-}
 
 

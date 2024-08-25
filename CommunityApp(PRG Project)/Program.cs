@@ -7,7 +7,6 @@ using System.Linq;
 using System.Threading;
 
 
-
 namespace CommunityApp_PRG_Project_
 {
     internal class Program
@@ -18,7 +17,7 @@ namespace CommunityApp_PRG_Project_
             Neighbourhood_Watch,
             Job_Finder,
             Group_Chat,
-            Profile_Management,
+            Show_profile_details,
             Exit
         }
 
@@ -30,42 +29,7 @@ namespace CommunityApp_PRG_Project_
             Back_to_menu,
         }
 
-        static void UserManage()
-        {
-            Console.WriteLine("===== Profile Management =====");
-
-            Console.WriteLine("To select an option below, type in the corresponding number provided");
-
-            foreach (UserMenu MenuOption in Enum.GetValues(typeof(UserMenu)))
-            {
-                string[] splitName = MenuOption.ToString().Replace('_', ' ');
-
-                Console.WriteLine("To {0} function, press {1}", splitName, (int)MenuOption);
-            }
-            int option;
-            if (int.TryParse(Console.ReadLine(), out option))
-            {
-                switch (option)
-                {
-                    case 1:
-                        Console.WriteLine();
-                    break;
-
-                    case 2:
-                        Console.WriteLine();
-                    break;
-
-                    case 3:
-                        Console.WriteLine();
-                    break;
-
-                    case 4:
-                    return;
-                }
-            }
-        }
-        
-        static void Menu(EventManager eventManager)
+        public static void Menu(EventManager eventManager)
         {
              // Set the console text color to green
              Console.ForegroundColor = ConsoleColor.Green;
@@ -99,11 +63,11 @@ namespace CommunityApp_PRG_Project_
                         break;
 
                         case 4:
-                            StartGroupChat(); // Call method to start group chat
+                            StartGroupChat(); 
                         break;
 
                         case 5:
-                             UserManage(eventManager);
+                            User.UserManage();
                         return;
 
                         case 6:
@@ -144,23 +108,21 @@ namespace CommunityApp_PRG_Project_
 
         static void Main(string[] args)
         {
-
-            //// Start the main menu loop
-            Menu(eventManager);
-            List<User> people = new List<User>
+            List<User> people = new List<User> //We created a list based on our User class so we can store multiple users
             {
-                new User("Tumi", "adminT"),
+                new User("Tumi", "adminT"),//Creating user details for admins
                 new User("Andile", "adminA"),
                 new User("Suhil", "adminS"),
                 new User("Reinhard", "adminR"),
                 new User("1", "1")
             };
+
             Console.WriteLine("Welcome to Retardville's Community App");
             Console.WriteLine("To sign in press 1 and to login press 2");
             
             dumdum:
                 string choice = Console.ReadLine();
-                bool isCorrect = int.TryParse(choice, out int result);
+                bool isCorrect = int.TryParse(choice, out int result);//Checks if choice can be changed into an int, stores a bool on whether it can be done, converts into int and stores into variable result.
                 Console.WriteLine("To sign in press 1 and to login press 2");
 
             if (isCorrect)
@@ -170,25 +132,26 @@ namespace CommunityApp_PRG_Project_
                     case 1:  
                         var SignedUser = User.SignUp();
 
-                        User newUser = new User(SignedUser.Item1, SignedUser.Item2);
+                        User newUser = new User(SignedUser.Item1, SignedUser.Item1);
                         people.Add(newUser);
 
                         Console.Clear();
-
                         Console.WriteLine("******** Sign Up Successful ********");
                         Thread.Sleep(2000);
                         Console.Clear();
 
-                        Login(people);
+                        var LogUser = Login(people);
+                        User loggeduser = new User(LogUser.Item1,LogUser.Item2);
                     break;
 
                     case 2:
-                        Login(people);
-                        break;
+                        var LogUser = Login(people);
+                        User loggeduser = new User(LogUser.Item1, LogUser.Item2);
+                    break;
 
                     default:
                         Console.WriteLine("Select an option between 1 and 2");
-                        goto dumdum;
+                    goto dumdum;
                 }
             }
             else

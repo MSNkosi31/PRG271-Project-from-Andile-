@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CommunityApp_PRG_Project_.UserManagement
 {
-    internal interface IMethods
+    interface IMethods
     {
-        void GetDetails();
+        public void ShowDetails();
     }
 }
