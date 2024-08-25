@@ -33,7 +33,7 @@ namespace CommunityApp_PRG_Project_.UserManagement
             Console.WriteLine("Create a password: ");
             password = Console.ReadLine();
 
-            using (StreamWriter sw = new StreamWriter(File.Create("C:\\Userlist.txt")))
+            using (StreamWriter sw = new StreamWriter(File.Create("login.txt")))
             {
                 sw.WriteLine(username);
                 sw.WriteLine(password);
@@ -51,7 +51,7 @@ namespace CommunityApp_PRG_Project_.UserManagement
             Console.WriteLine("Enter password: ");
             password = Console.ReadLine();
 
-            using (StreamReader sr = new StreamReader(File.Open("C:\\Userlist.txt", FileMode.Open)))
+            using (StreamReader sr = new StreamReader(File.Open("login.txt", FileMode.Open)))
             {
                 username = sr.ReadLine();
                 password = sr.ReadLine();
