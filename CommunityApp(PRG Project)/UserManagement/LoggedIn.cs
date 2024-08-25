@@ -6,19 +6,11 @@ using System.Threading.Tasks;
 
 namespace CommunityApp_PRG_Project_.UserManagement
 {
-    public class LoggedIn
+    public class LoggedIn:User
     {
         string loggedname;
+        string loggedpassword;
 
-        public LoggedIn()
-        {
-           
-        }
-        public LoggedIn(string loggedname)
-        {
-            Loggedname = loggedname;
-        }
-
-        public string Loggedname { get => this.Loggedname; set => this.Loggedname = value; }
+       
     }
 }

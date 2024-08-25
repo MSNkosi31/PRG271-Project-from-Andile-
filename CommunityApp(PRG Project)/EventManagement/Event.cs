@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommunityApp_PRG_Project_.UserManagement;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -10,7 +11,7 @@ namespace CommunityApp_PRG_Project_.EventManagement
         public DateTime EventDate { get; set; }
         public List<string> RSVPs { get; set; } = new List<string>();
 
-        public Event(string eventName, DateTime eventDate)
+        public Event(string eventName, DateTime eventDate )
         {
             EventName = eventName;
             EventDate = eventDate;
