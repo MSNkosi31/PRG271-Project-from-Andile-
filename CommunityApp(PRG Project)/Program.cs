@@ -117,9 +117,20 @@ namespace CommunityApp_PRG_Project_
             groupChat.AddGroup("City Group"); // Example group
             groupChat.StartChat(); // Start the group chat
         }
+        static void SignUp()
+        {
+            User newUser = new User();
+            newUser.UserSignUp();
+        }
 
-        
-        
+        static void Login()
+        {
+            User user = new User();
+            user.UserLogin();
+        }
+
+
+
 
 
         static void DisplayAsciiArt()
@@ -137,9 +148,37 @@ namespace CommunityApp_PRG_Project_
         static void Main(string[] args)
         {
             DisplayAsciiArt();
+            Console.WriteLine("Welcome to My Community App");
+            Console.WriteLine("To sign in press 1 and to login press 2");
 
-           
-        
+        login:
+            string choice = Console.ReadLine();
+            bool isCorrect = int.TryParse(choice, out int result);
+
+            if (isCorrect)
+            {
+                switch (result)
+                {
+                    case 1:
+                        SignUp();
+                        break;
+                    case 2:
+                        Login();
+                        break;
+                    default:
+                        Console.WriteLine("Select an option between 1 and 2");
+                        goto login;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Incorrect input, utilize numbers e.g'1,2,3,4,5");
+                goto login;
+            }
+
+
+
+
 
             // Initialize EventManager with EventCalendar
             EventCalendar calendar = new EventCalendar();
