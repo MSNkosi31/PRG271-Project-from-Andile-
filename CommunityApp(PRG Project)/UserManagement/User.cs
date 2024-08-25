@@ -26,48 +26,70 @@ namespace CommunityApp_PRG_Project_.UserManagement
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
 
-        public void UserSignUp()
+        public static (string, string) SignUp()
         {
-            Console.WriteLine("Create a username: ");
-            username = Console.ReadLine();
-            Console.WriteLine("Create a password: ");
-            password = Console.ReadLine();
+            Console.WriteLine("===== Sign up =====");
+            Console.Write("Create a username: ");
+            string username = Console.ReadLine();
 
-            using (StreamWriter sw = new StreamWriter("login.txt", true))
+        passrepeat:
+            Console.Write("Create password: ");
+            string precheck_password = Console.ReadLine();
+
+            Console.Write("Repeat your password: ");
+            string repeat_password = Console.ReadLine();
+
+            if (precheck_password == repeat_password)
             {
-                sw.WriteLine(username);
-                sw.WriteLine(password);
-                sw.Close();
-            }
-
-            Console.WriteLine("Welcome.....");
-            //Console.Read();
-        }
-
-        public void UserLogin()
-        {
-            Console.WriteLine("Enter username: ");
-            username = Console.ReadLine();
-            Console.WriteLine("Enter password: ");
-            password = Console.ReadLine();
-
-            using (StreamReader sr = new StreamReader(File.Open("login.txt", FileMode.Open)))
-            {
-                username = sr.ReadLine();
-                password = sr.ReadLine();
-                sr.Close();
-            }
-
-            if (username != null && password != null)
-            {
-                Console.WriteLine("Login succeful");
+                string password = precheck_password;
+                return (username, password);
             }
             else
             {
-                Console.WriteLine("Login Failed");
+                Console.WriteLine("Passwords don't match, ensure you input the same password.");
+                goto passrepeat;
             }
+        }
 
-           //6 Console.Read();
+        public static void Login(List<User> people)
+        {
+            Console.WriteLine("===== Login =====");
+
+        redo_user:
+            Console.Write("Enter your username: ");
+            string username_check = Console.ReadLine();
+
+        redo_pass:
+            Console.Write("Enter your password: ");
+            string password_check = Console.ReadLine();
+
+            // Find the user in the list
+            User foundUser = people.FirstOrDefault(user => user.Username == username_check);
+
+            if (foundUser != null)
+            {
+                if (foundUser.Password == password_check)
+                {
+                    User loggeduser = new User();
+                    loggeduser.Username = username_check;
+                    loggeduser.Password = password_check;
+
+                    Console.Clear();
+                    Console.WriteLine("******** Login Successful ********");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect password, ensure you input the correct password.");
+                    goto redo_pass;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Username does not exist, ensure you input the correct username.");
+                goto redo_user;
+            }
         }
     }
 }

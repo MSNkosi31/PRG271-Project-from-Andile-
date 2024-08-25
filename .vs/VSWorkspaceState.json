@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CommunityApp(PRG Project)",
+    "\\CommunityApp(PRG Project)\\UserManagement"
   ],
+  "SelectedNode": "\\CommunityApp(PRG Project)\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
