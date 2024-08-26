@@ -5,9 +5,7 @@ using CommunityApp_PRG_Project_.UserManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading;
-using System.Xml.Linq;
 
 namespace CommunityApp_PRG_Project_
 {
@@ -21,10 +19,11 @@ namespace CommunityApp_PRG_Project_
             Exit
         }
 
-        // Make these lists static so they can be accessed in static methods
         static List<Employer> employers = new List<Employer>();
         static List<Applicant> applicants = new List<Applicant>();
         static List<Job> jobs = new List<Job>();
+
+        static IJobFinder jobFinderService = new JobFinderService();
 
         public static void Menu(EventManager eventManager)
         {
@@ -47,14 +46,12 @@ namespace CommunityApp_PRG_Project_
                     case 1:
                         eventManager.EventMenu();
                         break;
-
                     case 2:
                         JobFinderMenu();
                         break;
                     case 3:
                         StartGroupChat();
                         break;
-                    
                     case 4:
                         Console.WriteLine("Exiting...");
                         return;
@@ -165,22 +162,22 @@ namespace CommunityApp_PRG_Project_
                 switch (pick)
                 {
                     case "1":
-                        AddEmployer();
+                        jobFinderService.AddEmployer(employers);
                         break;
                     case "2":
-                        AddApplicant();
+                        jobFinderService.AddApplicant(applicants);
                         break;
                     case "3":
-                        AddJob();
+                        jobFinderService.AddJob(jobs);
                         break;
                     case "4":
-                        ListEmployers();
+                        jobFinderService.ListEmployers(employers);
                         break;
                     case "5":
-                        ListApplicants();
+                        jobFinderService.ListApplicants(applicants);
                         break;
                     case "6":
-                        ListJobs();
+                        jobFinderService.ListJobs(jobs);
                         break;
                     case "7":
                         exit = true;
@@ -189,94 +186,6 @@ namespace CommunityApp_PRG_Project_
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
                 }
-            }
-        }
-
-        static void AddEmployer()
-        {
-            Console.Write("Enter Employer Name: ");
-            string name = Console.ReadLine();
-
-            Console.Write("Enter Contact Number: ");
-            int contactNo = int.Parse(Console.ReadLine());
-
-            Employer employer = new Employer
-            {
-                Name = name,
-                ContactNo = contactNo
-            };
-            employers.Add(employer);
-            Console.WriteLine("Employer added successfully.");
-        }
-
-        static void AddApplicant()
-        {
-            Console.Write("Enter Applicant Name: ");
-            string name = Console.ReadLine();
-
-            Console.Write("Enter Applicant Email: ");
-            string email = Console.ReadLine();
-
-            Console.Write("Enter Resume Information: ");
-            string resume = Console.ReadLine();
-
-            string CV = null;
-            Applicant applicant = new Applicant
-            {
-                Name = name,
-                Email = email,
-                CV = CV,
-            };
-            applicants.Add(applicant);
-            Console.WriteLine("Applicant added successfully.");
-        }
-
-        static void AddJob()
-        {
-            Console.Write("Enter Job Title: ");
-            string title = Console.ReadLine();
-
-            Console.Write("Enter Job Description: ");
-            string description = Console.ReadLine();
-
-            Console.Write("Enter Employer Name: ");
-            string employerName = Console.ReadLine();
-
-            Job job = new Job
-            {
-                Title = title,
-                Description = description,
-                EmployerName = employerName
-            };
-
-            jobs.Add(job);
-            Console.WriteLine("Job added successfully.");
-        }
-
-        static void ListEmployers()
-        {
-            Console.WriteLine("\nList of Employers:");
-            foreach (var employer in employers)
-            {
-                Console.WriteLine(employer);
-            }
-        }
-
-        static void ListApplicants()
-        {
-            Console.WriteLine("\nList of Applicants:");
-            foreach (var applicant in applicants)
-            {
-                Console.WriteLine(applicant);
-            }
-        }
-
-        static void ListJobs()
-        {
-            Console.WriteLine("\nList of Jobs:");
-            foreach (var job in jobs)
-            {
-                Console.WriteLine(job);
             }
         }
     }

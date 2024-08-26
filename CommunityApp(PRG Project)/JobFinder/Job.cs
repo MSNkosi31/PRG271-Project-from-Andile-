@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CommunityApp_PRG_Project_.JobFinder
 {
-    internal class Job
+    public class Job
     {
         private string title;
         private string description;

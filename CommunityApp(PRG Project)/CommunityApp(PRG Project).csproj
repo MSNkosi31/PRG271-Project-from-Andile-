@@ -51,7 +51,9 @@
     <Compile Include="GroupChat\Message.cs" />
     <Compile Include="JobFinder\Applicant.cs" />
     <Compile Include="JobFinder\Employer.cs" />
+    <Compile Include="JobFinder\IJobFinder.cs" />
     <Compile Include="JobFinder\Job.cs" />
+    <Compile Include="JobFinder\JobFinderService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserManagement\IMethods.cs" />

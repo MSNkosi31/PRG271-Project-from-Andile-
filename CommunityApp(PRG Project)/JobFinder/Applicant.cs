@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CommunityApp_PRG_Project_.JobFinder
 {
-    internal class Applicant
+    public class Applicant
     {
         private string name;
         private string email;
