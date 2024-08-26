@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\suhil jugroop\\onedrive\\documents\\github\\prg271-project-from-andile-\\communityapp(prg project)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\communityapp(prg project)\\jobfinder\\jobfinderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -79,26 +79,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\User.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\UserManagement\\User.cs",
               "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\User.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\UserManagement\\User.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAmwI8AAAAAAAAA",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAcwGQAAACHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T23:36:17.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\Program.cs",
               "ToolTip": "C:\\Users\\Suhil Jugroop\\OneDrive\\Documents\\GitHub\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\Program.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAuwJEAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T13:34:03.027Z",
               "EditorCaption": ""

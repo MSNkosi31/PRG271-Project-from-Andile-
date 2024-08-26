@@ -98,7 +98,7 @@ namespace CommunityApp_PRG_Project_.UserManagement
             Console.Write("Enter your password: ");
             string password_check = Console.ReadLine();
 
-            // Encrypt the entered password to compare with the stored encrypted passwords
+            // Encrypt the entered password to compare with the stored encrypted passwords - FOR THE LOVE OF GOD DO NOT TOUCH THIS CODE
             string encryptedPasswordCheck = EncryptPassword(password_check);
 
             User foundUser = people.FirstOrDefault(user => user.Username == username_check);
