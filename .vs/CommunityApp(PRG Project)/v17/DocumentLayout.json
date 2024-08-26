@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\communityapp(prg project)\\jobfinder\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\jobfinder\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\tumza\\onedrive\\desktop\\prg271-project-from-andile-\\communityapp(prg project)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,8 +11,16 @@
       "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\jobfinder\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\communityapp(prg project)\\jobfinder\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\jobfinder\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\communityapp(prg project)\\jobfinder\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\jobfinder\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|c:\\users\\tumza\\onedrive\\desktop\\prg271-project-from-andile-\\communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D02F227-B336-45E6-BAC4-7AE428C3CCD4}|CommunityApp(PRG Project)\\CommunityApp(PRG Project).csproj|solutionrelative:communityapp(prg project)\\usermanagement\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,6 +78,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "RelativeToolTip": "CommunityApp(PRG Project)\\UserManagement\\User.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:30:11.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Job.cs",
               "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Job.cs",
@@ -87,39 +104,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Employer.cs",
               "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Employer.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\JobFinder\\Employer.cs",
               "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Employer.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\JobFinder\\Employer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwB0AAABHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwB0AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T22:55:18.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Applicant.cs",
               "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Applicant.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\JobFinder\\Applicant.cs",
               "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\JobFinder\\Applicant.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\JobFinder\\Applicant.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwCAAAAA/AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA4AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T22:55:12.261Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs",
               "RelativeDocumentMoniker": "CommunityApp(PRG Project)\\Program.cs",
               "ToolTip": "C:\\Users\\tumza\\OneDrive\\Desktop\\PRG271-Project-from-Andile-\\CommunityApp(PRG Project)\\Program.cs",
               "RelativeToolTip": "CommunityApp(PRG Project)\\Program.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAuwAMBAAAdAAAA",
+              "ViewState": "AQIAAOYAAAAAAAAAAAAgwLcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T22:55:00.212Z",
               "EditorCaption": ""

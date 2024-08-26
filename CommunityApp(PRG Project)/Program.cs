@@ -130,8 +130,7 @@ namespace CommunityApp_PRG_Project_
             {
                 Login(people);
             }
-<<<<<<< Updated upstream
-=======
+
 
 
             // Job,employer,applicant choice selection
@@ -152,7 +151,7 @@ namespace CommunityApp_PRG_Project_
                 string pick = Console.ReadLine();
 
                 switch (pick)
-                {
+                { 
                     case "1":
                         AddEmployer();
                         break;
@@ -182,7 +181,7 @@ namespace CommunityApp_PRG_Project_
 
             //// Initialize EventManager with EventCalendar
             EventCalendar calendar = new EventCalendar();
->>>>>>> Stashed changes
+
 
             EventCalendar calendar = new EventCalendar();
             calendar.LoadEventsFromFile();
@@ -215,8 +214,8 @@ namespace CommunityApp_PRG_Project_
 
             Employer employer = new Employer
             {
-                Name1 = name,
-                ContactNo1 = contactNo
+                Name = name,
+                ContactNo = contactNo
             };
             employers.Add(employer);
             Console.WriteLine("Employer added successfully.");
@@ -238,15 +237,15 @@ namespace CommunityApp_PRG_Project_
             string CV = null;
             Applicant applicant = new Applicant
             {
-                Name1 = name,
-                Email1 = email,
-                CV1 = CV,
+                Name = name,
+                Email = email,
+                CV = CV,
             };
             applicants.Add(applicant);
             Console.WriteLine("Applicant added successfully.");
         }
 
-        static void AddJob()
+        static void AddJob(List<Job> jobs)
         {
             Console.Write("Enter Job Title: ");
             string title = Console.ReadLine();

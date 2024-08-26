@@ -8,7 +8,7 @@ namespace CommunityApp_PRG_Project_.JobFinder
 {
     internal class Applicant
     {
-        private string title;
+        private string name;
         private string email;
         private string cV;
 
@@ -17,20 +17,20 @@ namespace CommunityApp_PRG_Project_.JobFinder
             
         }
 
-        public Applicant(string title, string email, string cV)
+        public Applicant(string name, string email, string cV)
         {
-            this.title = title;
+            this.name = name;
             this.email = email;
             this.cV = cV;
         }
 
-        public string Title { get => title; set => title = value; }
+        public string Name { get => name; set => name = value; }
         public string Email { get => email; set => email = value; }
         public string CV { get => cV; set => cV = value; }
 
         public override string ToString()
         {
-            return ($"Job: {title}, Email: {email}, CV: {cV}");
+            return ($"Applicant: {Name}, Email: {Email}, CV: {CV}");
         }
     }
 }
