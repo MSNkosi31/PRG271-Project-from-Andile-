@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
-
 namespace CommunityApp_PRG_Project_
 {
     internal class Program
@@ -21,96 +20,78 @@ namespace CommunityApp_PRG_Project_
             Exit
         }
 
-        enum UserMenu
-        {
-            View_profile_details = 1,
-            Change_password,
-            Change_username,
-            Back_to_menu,
-        }
-
         public static void Menu(EventManager eventManager)
         {
-             // Set the console text color to green
-             Console.ForegroundColor = ConsoleColor.Green;
-             DisplayAsciiArt();
+            Console.ForegroundColor = ConsoleColor.Green;
+            DisplayAsciiArt();
 
-             Console.WriteLine("===== Main Menu =====");
-             Console.WriteLine("To select an option below, type in the corresponding number provided");
+            Console.WriteLine("===== Main Menu =====");
+            Console.WriteLine("To select an option below, type in the corresponding number provided");
 
-             foreach (MainMenu MenuOption in Enum.GetValues(typeof(MainMenu)))
-             {
-                string[] splitName = MenuOption.ToString().Replace('_', ' ');
-
+            foreach (MainMenu MenuOption in Enum.GetValues(typeof(MainMenu)))
+            {
+                string splitName = MenuOption.ToString().Replace('_', ' ');
                 Console.WriteLine("To access the {0} function, press {1}", splitName, (int)MenuOption);
-             }
+            }
 
-             int option;
-             if (int.TryParse(Console.ReadLine(), out option))
+            if (int.TryParse(Console.ReadLine(), out int option))
+            {
+                switch (option)
                 {
-                    switch (option)
-                    {
-                        case 1:
-                            eventManager.EventMenu();
+                    case 1:
+                        eventManager.EventMenu();
                         break;
-
-                        case 2:
-                            Console.WriteLine("Neighbourhood Watch not yet implemented.");
+                    case 2:
+                        Console.WriteLine("Neighbourhood Watch not yet implemented.");
                         break;
-
-                        case 3:
-                            Console.WriteLine("Job Finder not yet implemented.");
+                    case 3:
+                        Console.WriteLine("Job Finder not yet implemented.");
                         break;
-
-                        case 4:
-                            StartGroupChat(); 
+                    case 4:
+                        StartGroupChat();
                         break;
-
-                        case 5:
-                            User.UserManage();
+                    case 5:
+                        User.UserManage();
                         return;
-
-                        case 6:
-                             Console.WriteLine("Exiting...");
+                    case 6:
+                        Console.WriteLine("Exiting...");
                         return;
-
-                        default:
-                             Console.WriteLine("Invalid option. Please try again.");
+                    default:
+                        Console.WriteLine("Invalid option. Please try again.");
                         break;
-
-                    }
-              }
-              else
-              {
-                    Console.WriteLine("Please enter a valid number.");
-              }
-              Menu(eventManager);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please enter a valid number.");
+            }
+            Menu(eventManager);
         }
 
         static void StartGroupChat()
         {
-            // Initialize the group chat
             HierarchicalGroupChat groupChat = new HierarchicalGroupChat();
-            groupChat.AddGroup("City Group"); // Example group
-            groupChat.StartChat(); // Start the group chat
+            groupChat.AddGroup("City Group");
+            groupChat.StartChat();
         }
 
         static void DisplayAsciiArt()
         {
-            Console.WriteLine(@"__  ___         ______                                        __       
-                               /  |/  /_  __   / ____/___  ____ ___  ____ ___  __  ______  (_) /___  __
-                              / /|_/ / / / /  / /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / __/ / / /
-                             / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
-                            /_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
-                                   ___/ /                                                     ___/ /
-                                  /____/                                                     /____/ ");
+            Console.WriteLine(@"
+    __  ___         ______                                      _ __       
+   /  |/  /_  __   / ____/___  ____ ___  ____ ___  __  ______  (_) /___  __
+  / /|_/ / / / /  / /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / __/ / / /
+ / /  / / /_/ /  / /___/ /_/ / / / / / / / / / / / /_/ / / / / / /_/ /_/ / 
+/_/  /_/\__, /   \____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/\__/\__, /  
+       /____/                                                     /____/   
+ ");
         }
 
         static void Main(string[] args)
         {
-            List<User> people = new List<User> //We created a list based on our User class so we can store multiple users
+            List<User> people = new List<User>
             {
-                new User("Tumi", "adminT"),//Creating user details for admins
+                new User("Tumi", "adminT"),
                 new User("Andile", "adminA"),
                 new User("Suhil", "adminS"),
                 new User("Reinhard", "adminR"),
@@ -119,66 +100,46 @@ namespace CommunityApp_PRG_Project_
 
             Console.WriteLine("Welcome to Retardville's Community App");
             Console.WriteLine("To sign in press 1 and to login press 2");
-            
-            dumdum:
-                string choice = Console.ReadLine();
-                bool isCorrect = int.TryParse(choice, out int result);//Checks if choice can be changed into an int, stores a bool on whether it can be done, converts into int and stores into variable result.
-                Console.WriteLine("To sign in press 1 and to login press 2");
 
-            if (isCorrect)
+            int result;
+            string choice;
+            do
             {
-                switch (result)
-                {
-                    case 1:  
-                        var SignedUser = User.SignUp();
+                choice = Console.ReadLine();
+            } while (!int.TryParse(choice, out result) || (result != 1 && result != 2));
 
-                        User newUser = new User(SignedUser.Item1, SignedUser.Item1);
-                        people.Add(newUser);
-
-                        Console.Clear();
-                        Console.WriteLine("******** Sign Up Successful ********");
-                        Thread.Sleep(2000);
-                        Console.Clear();
-
-                        var LogUser = Login(people);
-                        User loggeduser = new User(LogUser.Item1,LogUser.Item2);
-                    break;
-
-                    case 2:
-                        var LogUser = Login(people);
-                        User loggeduser = new User(LogUser.Item1, LogUser.Item2);
-                    break;
-
-                    default:
-                        Console.WriteLine("Select an option between 1 and 2");
-                    goto dumdum;
-                }
-            }
-            else
+            if (result == 1)
             {
-                Console.WriteLine("Incorrect input, utilize numbers e.g'1,2,3,4,5");
-                goto dumdum;
+                var signedUser = User.SignUp();
+                User newUser = new User(signedUser.Item1, signedUser.Item2);
+                people.Add(newUser);
+                Console.Clear();
+                Console.WriteLine("******** Sign Up Successful ********");
+                Thread.Sleep(2000);
+                Console.Clear();
+                Login(people);
             }
-            
-            //// Initialize EventManager with EventCalendar
-            EventCalendar calendar = new EventCalendar();
+            else if (result == 2)
+            {
+                Login(people);
+            }
 
-            calendar.LoadEventsFromFile();  // Load events from file
-            calendar.LoadRSVPsFromFile();   // Load RSVPs from file
-            EventManager eventManager = new EventManager(calendar);
             EventCalendar calendar = new EventCalendar();
-
-            calendar.LoadEventsFromFile();  // Load events from file
-            calendar.LoadRSVPsFromFile();   // Load RSVPs from file
+            calendar.LoadEventsFromFile();
+            calendar.LoadRSVPsFromFile();
             EventManager eventManager = new EventManager(calendar);
 
-            //// Subscribe to the EventAdded event
             eventManager.EventAdded += OnEventAdded;
+            Menu(eventManager);
+        }
+
+        static (string, string) Login(List<User> people)
+        {
+            return User.Login(people);
         }
 
         static void OnEventAdded(Event newEvent)
         {
-            // Example action when a new event is added
             Console.WriteLine($"[Notification] New event added: {newEvent.EventName} on {newEvent.EventDate}");
         }
     }

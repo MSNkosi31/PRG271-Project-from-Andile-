@@ -2,34 +2,28 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace CommunityApp_PRG_Project_.UserManagement
 {
-    public class User:IMethods
+    public class User
     {
-        string username;
-        string password;
+        public string Username { get; set; }
+        public string Password { get; set; }
 
+        public User() { }
 
-        public User()
-        {
-            
-        }
         public User(string username, string password)
         {
-            this.username = username;
-            this.password = password;
+            Username = username;
+            Password = password;
         }
-
-        public string Username { get => username; set => username = value; }
-        public string Password { get => password; set => password = value; }
 
         public void ShowDetails()
-        { 
-            
+        {
+            Console.WriteLine($"Username: {Username}, Password: {Password}");
         }
+
         public static (string, string) SignUp()
         {
             Console.WriteLine("===== Sign up =====");
@@ -39,13 +33,13 @@ namespace CommunityApp_PRG_Project_.UserManagement
         passrepeat:
             Console.Write("Create password: ");
             string precheck_password = Console.ReadLine();
-
             Console.Write("Repeat your password: ");
             string repeat_password = Console.ReadLine();
 
             if (precheck_password == repeat_password)
             {
                 string password = precheck_password;
+                SaveUserToFile(username, password);
                 return (username, password);
             }
             else
@@ -55,43 +49,23 @@ namespace CommunityApp_PRG_Project_.UserManagement
             }
         }
 
+        private static void SaveUserToFile(string username, string password)
+        {
+            using (StreamWriter sw = new StreamWriter("login.txt", true)) // Append mode
+            {
+                sw.WriteLine(username);
+                sw.WriteLine(password);
+            }
+        }
 
         public static void UserManage()
         {
             Console.WriteLine("===== Profile Management =====");
-
-            Console.WriteLine("To select an option below, type in the corresponding number provided");
-
-            foreach (UserMenu MenuOption in Enum.GetValues(typeof(UserMenu)))
-            {
-                string[] splitName = MenuOption.ToString().Replace('_', ' ');
-
-                Console.WriteLine("To {0} function, press {1}", splitName, (int)MenuOption);
-            }
-            int option;
-            if (int.TryParse(Console.ReadLine(), out option))
-            {
-                switch (option)
-                {
-                    case 1:
-                        User.ShowDetails();
-                        break;
-
-                    case 2:
-                        Console.WriteLine();
-                        break;
-
-                    case 3:
-                        Console.WriteLine();
-                        break;
-
-                    case 4:
-                        return;
-                }
-            }
+            Console.WriteLine("Functionality to manage user profiles is not yet implemented.");
+            Console.ReadLine();
         }
 
-        public static (string,string) Login(List<User> people)
+        public static (string, string) Login(List<User> people)
         {
             Console.WriteLine("===== Login =====");
 
@@ -102,10 +76,9 @@ namespace CommunityApp_PRG_Project_.UserManagement
             Console.Write("Enter your password: ");
             string password_check = Console.ReadLine();
 
-           
-            User foundUser = people.FirstOrDefault(user => user.Username == username_check);//Searching for the inputted sername from the list, creates an obj based on my User class using the username found through the search
+            User foundUser = people.FirstOrDefault(user => user.Username == username_check);
 
-            if (foundUser != null && foundUser.Password == password_check) //Cheacking if the found user obj is empty and if the password of the found user corrolates to the inputted password
+            if (foundUser != null && foundUser.Password == password_check)
             {
                 Console.Clear();
                 Console.WriteLine("******** Login Successful ********");
@@ -115,11 +88,9 @@ namespace CommunityApp_PRG_Project_.UserManagement
             }
             else
             {
-                Console.WriteLine("Incorrect username or password , ensure you input the correct details.");
-                goto redo_pass;
-                }
+                Console.WriteLine("Incorrect username or password, ensure you input the correct details.");
+                goto redo_user;
             }
         }
     }
-
-
+}

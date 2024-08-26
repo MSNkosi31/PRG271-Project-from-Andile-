@@ -8,6 +8,6 @@ namespace CommunityApp_PRG_Project_.UserManagement
 {
     interface IMethods
     {
-        public void ShowDetails();
+         void ShowDetails();
     }
 }
