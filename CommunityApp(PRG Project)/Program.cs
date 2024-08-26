@@ -1,10 +1,13 @@
 ﻿using CommunityApp_PRG_Project_.EventManagement;
 using CommunityApp_PRG_Project_.GroupChat;
+using CommunityApp_PRG_Project_.JobFinder;
 using CommunityApp_PRG_Project_.UserManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading;
+using System.Xml.Linq;
 
 namespace CommunityApp_PRG_Project_
 {
@@ -87,6 +90,10 @@ namespace CommunityApp_PRG_Project_
  ");
         }
 
+        List<Employer> employers = new List<Employer>();
+        List<Applicant> applicants = new List<Applicant>();
+        List<Job> jobs = new List<Job>();
+
         static void Main(string[] args)
         {
             List<User> people = new List<User>
@@ -123,6 +130,59 @@ namespace CommunityApp_PRG_Project_
             {
                 Login(people);
             }
+<<<<<<< Updated upstream
+=======
+
+
+            // Job,employer,applicant choice selection
+
+            bool exit = false;
+
+            while (!exit)
+            {
+                Console.WriteLine("Job Portal Menu:");
+                Console.WriteLine("1. Add Employer");
+                Console.WriteLine("2. Add Applicant");
+                Console.WriteLine("3. Add Job");
+                Console.WriteLine("4. List Employers");
+                Console.WriteLine("5. List Applicants");
+                Console.WriteLine("6. List Jobs");
+                Console.WriteLine("7. Exit");
+                Console.Write("Choose an option: ");
+                string pick = Console.ReadLine();
+
+                switch (pick)
+                {
+                    case "1":
+                        AddEmployer();
+                        break;
+                    case "2":
+                        AddApplicant();
+                        break;
+                    case "3":
+                        AddJob();
+                        break;
+                    case "4":
+                        ListEmployers();
+                        break;
+                    case "5":
+                        ListApplicants();
+                        break;
+                    case "6":
+                        ListJobs();
+                        break;
+                    case "7":
+                        exit = true;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
+                }
+            }
+
+            //// Initialize EventManager with EventCalendar
+            EventCalendar calendar = new EventCalendar();
+>>>>>>> Stashed changes
 
             EventCalendar calendar = new EventCalendar();
             calendar.LoadEventsFromFile();
@@ -141,6 +201,98 @@ namespace CommunityApp_PRG_Project_
         static void OnEventAdded(Event newEvent)
         {
             Console.WriteLine($"[Notification] New event added: {newEvent.EventName} on {newEvent.EventDate}");
+        }
+
+       
+
+        static void AddEmployer(List<Employer> employers)
+        {
+            Console.Write("Enter Employer Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter Contact Number: ");
+            int contactNo = int.Parse(Console.ReadLine());
+
+            Employer employer = new Employer
+            {
+                Name1 = name,
+                ContactNo1 = contactNo
+            };
+            employers.Add(employer);
+            Console.WriteLine("Employer added successfully.");
+        }
+
+        
+
+        static void AddApplicant(List<Applicant> applicants)
+        {
+            Console.Write("Enter Applicant Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter Applicant Email: ");
+            string email = Console.ReadLine();
+
+            Console.Write("Enter Resume Information: ");
+            string resume = Console.ReadLine();
+
+            string CV = null;
+            Applicant applicant = new Applicant
+            {
+                Name1 = name,
+                Email1 = email,
+                CV1 = CV,
+            };
+            applicants.Add(applicant);
+            Console.WriteLine("Applicant added successfully.");
+        }
+
+        static void AddJob()
+        {
+            Console.Write("Enter Job Title: ");
+            string title = Console.ReadLine();
+
+            Console.Write("Enter Job Description: ");
+            string description = Console.ReadLine();
+
+            Console.Write("Enter Employer Name: ");
+            string employerName = Console.ReadLine();
+
+            Job job = new Job
+            {
+                Title = title,
+                Description = description,
+                EmployerName = employerName
+            };
+
+            jobs.Add(job);
+            Console.WriteLine("Job added successfully.");
+        }
+
+        static void ListEmployers()
+        {
+            Console.WriteLine("\nList of Employers:");
+            foreach (var employer in employers)
+            {
+                Console.WriteLine(employer);
+            }
+        }
+
+        static void ListApplicants()
+        {
+            Console.WriteLine("\nList of Applicants:");
+            foreach (var applicant in applicants)
+            {
+                Console.WriteLine(applicant);
+            }
+        }
+
+        static void ListJobs()
+        {
+            Console.WriteLine("\nList of Jobs:");
+            foreach (var job in jobs)
+            {
+                Console.WriteLine(job);
+            }
         }
     }
 }
