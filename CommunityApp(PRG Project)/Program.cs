@@ -16,12 +16,15 @@ namespace CommunityApp_PRG_Project_
         enum MainMenu
         {
             Events = 1,
-            Neighbourhood_Watch,
             Job_Finder,
             Group_Chat,
-            Show_profile_details,
             Exit
         }
+
+        // Make these lists static so they can be accessed in static methods
+        static List<Employer> employers = new List<Employer>();
+        static List<Applicant> applicants = new List<Applicant>();
+        static List<Job> jobs = new List<Job>();
 
         public static void Menu(EventManager eventManager)
         {
@@ -44,19 +47,15 @@ namespace CommunityApp_PRG_Project_
                     case 1:
                         eventManager.EventMenu();
                         break;
+
                     case 2:
-                        Console.WriteLine("Neighbourhood Watch not yet implemented.");
+                        JobFinderMenu();
                         break;
                     case 3:
-                        Console.WriteLine("Job Finder not yet implemented.");
-                        break;
-                    case 4:
                         StartGroupChat();
                         break;
-                    case 5:
-                        User.UserManage();
-                        return;
-                    case 6:
+                    
+                    case 4:
                         Console.WriteLine("Exiting...");
                         return;
                     default:
@@ -89,10 +88,6 @@ namespace CommunityApp_PRG_Project_
        /____/                                                     /____/   
  ");
         }
-
-        List<Employer> employers = new List<Employer>();
-        List<Applicant> applicants = new List<Applicant>();
-        List<Job> jobs = new List<Job>();
 
         static void Main(string[] args)
         {
@@ -131,10 +126,27 @@ namespace CommunityApp_PRG_Project_
                 Login(people);
             }
 
+            EventCalendar calendar = new EventCalendar();
+            calendar.LoadEventsFromFile();
+            calendar.LoadRSVPsFromFile();
+            EventManager eventManager = new EventManager(calendar);
 
+            eventManager.EventAdded += OnEventAdded;
+            Menu(eventManager);
+        }
 
-            // Job,employer,applicant choice selection
+        static (string, string) Login(List<User> people)
+        {
+            return User.Login(people);
+        }
 
+        static void OnEventAdded(Event newEvent)
+        {
+            Console.WriteLine($"[Notification] New event added: {newEvent.EventName} on {newEvent.EventDate}");
+        }
+
+        static void JobFinderMenu()
+        {
             bool exit = false;
 
             while (!exit)
@@ -151,7 +163,7 @@ namespace CommunityApp_PRG_Project_
                 string pick = Console.ReadLine();
 
                 switch (pick)
-                { 
+                {
                     case "1":
                         AddEmployer();
                         break;
@@ -178,33 +190,9 @@ namespace CommunityApp_PRG_Project_
                         break;
                 }
             }
-
-            //// Initialize EventManager with EventCalendar
-            EventCalendar calendar = new EventCalendar();
-
-
-            EventCalendar calendar = new EventCalendar();
-            calendar.LoadEventsFromFile();
-            calendar.LoadRSVPsFromFile();
-            EventManager eventManager = new EventManager(calendar);
-
-            eventManager.EventAdded += OnEventAdded;
-            Menu(eventManager);
         }
 
-        static (string, string) Login(List<User> people)
-        {
-            return User.Login(people);
-        }
-
-        static void OnEventAdded(Event newEvent)
-        {
-            Console.WriteLine($"[Notification] New event added: {newEvent.EventName} on {newEvent.EventDate}");
-        }
-
-       
-
-        static void AddEmployer(List<Employer> employers)
+        static void AddEmployer()
         {
             Console.Write("Enter Employer Name: ");
             string name = Console.ReadLine();
@@ -221,9 +209,7 @@ namespace CommunityApp_PRG_Project_
             Console.WriteLine("Employer added successfully.");
         }
 
-        
-
-        static void AddApplicant(List<Applicant> applicants)
+        static void AddApplicant()
         {
             Console.Write("Enter Applicant Name: ");
             string name = Console.ReadLine();
@@ -245,7 +231,7 @@ namespace CommunityApp_PRG_Project_
             Console.WriteLine("Applicant added successfully.");
         }
 
-        static void AddJob(List<Job> jobs)
+        static void AddJob()
         {
             Console.Write("Enter Job Title: ");
             string title = Console.ReadLine();

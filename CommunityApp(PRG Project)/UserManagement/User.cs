@@ -58,15 +58,15 @@ namespace CommunityApp_PRG_Project_.UserManagement
             }
         }
 
-        public static void UserManage()
-        {
-            Console.WriteLine("===== Profile Management =====");
-            Console.WriteLine("Functionality to manage user profiles is not yet implemented.");
-            Console.ReadLine();
-        }
-
         public static (string, string) Login(List<User> people)
         {
+            // Load users from the file
+            List<User> usersFromFile = LoadUsersFromFile();
+            if (usersFromFile != null)
+            {
+                people.AddRange(usersFromFile);
+            }
+
             Console.WriteLine("===== Login =====");
 
         redo_user:
@@ -91,6 +91,28 @@ namespace CommunityApp_PRG_Project_.UserManagement
                 Console.WriteLine("Incorrect username or password, ensure you input the correct details.");
                 goto redo_user;
             }
+        }
+
+        private static List<User> LoadUsersFromFile()
+        {
+            List<User> users = new List<User>();
+
+            if (File.Exists("login.txt"))
+            {
+                using (StreamReader sr = new StreamReader("login.txt"))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        string username = sr.ReadLine();
+                        string password = sr.ReadLine();
+                        if (!string.IsNullOrWhiteSpace(username) && !string.IsNullOrWhiteSpace(password))
+                        {
+                            users.Add(new User(username, password));
+                        }
+                    }
+                }
+            }
+            return users;
         }
     }
 }
