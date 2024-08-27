@@ -17,7 +17,7 @@ namespace CommunityApp_PRG_Project_.EventManagement
 
         public void EventMenu()
         {
-            Console.Clear();
+            
             Console.WriteLine("===== Event Management =====");
             Console.WriteLine("1. Create Event");
             Console.WriteLine("2. List Events");

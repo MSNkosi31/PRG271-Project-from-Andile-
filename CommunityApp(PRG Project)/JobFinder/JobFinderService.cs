@@ -98,6 +98,7 @@ namespace CommunityApp_PRG_Project_.JobFinder
                 {
                     Console.WriteLine(employer);
                 }
+                
             }
             else
             {
@@ -105,7 +106,7 @@ namespace CommunityApp_PRG_Project_.JobFinder
                 Thread.Sleep(1500);
 
             }
-            Console.Clear();
+           
         }
 
         public void ListApplicants(List<Applicant> applicants)
@@ -120,11 +121,11 @@ namespace CommunityApp_PRG_Project_.JobFinder
                 }
             }
             else
-            { 
+            {
                 Console.WriteLine("******No applicants found******");
                 Thread.Sleep(1500);
             }
-            Console.Clear();
+            
         }
 
         public void ListJobs(List<Job> jobs)
@@ -137,13 +138,14 @@ namespace CommunityApp_PRG_Project_.JobFinder
                 {
                     Console.WriteLine(job);
                 }
+               ;
             }
             else
             { 
                 Console.WriteLine("******No joblisting found******");
                 Thread.Sleep(1500);
             }
-            Console.Clear();
+            
         }
     }
 }

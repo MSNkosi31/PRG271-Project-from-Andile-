@@ -45,9 +45,11 @@ namespace CommunityApp_PRG_Project_
                 switch (option)
                 {
                     case 1:
+                        Console.Clear();
                         eventManager.EventMenu();
                         break;
                     case 2:
+                        Console.Clear();
                         JobFinderMenu();
                         break;
                     case 3:
@@ -156,7 +158,7 @@ namespace CommunityApp_PRG_Project_
 
         static void JobFinderMenu()
         {
-            Console.Clear();
+            
             bool exit = false;
 
             while (!exit)

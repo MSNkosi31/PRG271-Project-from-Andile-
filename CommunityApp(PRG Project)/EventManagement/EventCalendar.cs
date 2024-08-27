@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 
 namespace CommunityApp_PRG_Project_.EventManagement
 {
@@ -89,6 +90,8 @@ namespace CommunityApp_PRG_Project_.EventManagement
 
         public void ListEvents()
         {
+            Console.WriteLine("======List Of Events======");
+            Console.Clear();
             if (Events.Count == 0)
             {
                 Console.WriteLine("No upcoming events.");
@@ -100,6 +103,7 @@ namespace CommunityApp_PRG_Project_.EventManagement
                 var timeUntilEvent = e.GetTimeUntilEvent();
                 Console.WriteLine($"{e.EventName} - {e.EventDate} ({timeUntilEvent.Days} days, {timeUntilEvent.Hours} hours remaining)");
             }
+           
         }
     }
 }
