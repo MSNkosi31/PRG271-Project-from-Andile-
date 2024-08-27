@@ -2,10 +2,18 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading;
 
 namespace CommunityApp_PRG_Project_.UserManagement
 {
+    // Custom exception for invalid login attempts
+    public class InvalidLoginException : Exception
+    {
+        public InvalidLoginException(string message) : base(message) { }
+    }
+
     public class User
     {
         public string Username { get; set; }
@@ -38,9 +46,9 @@ namespace CommunityApp_PRG_Project_.UserManagement
 
             if (precheck_password == repeat_password)
             {
-                string password = precheck_password;
-                SaveUserToFile(username, password);
-                return (username, password);
+                string encryptedPassword = EncryptPassword(precheck_password); // Encrypt the password before saving
+                SaveUserToFile(username, encryptedPassword);
+                return (username, encryptedPassword);
             }
             else
             {
@@ -49,12 +57,26 @@ namespace CommunityApp_PRG_Project_.UserManagement
             }
         }
 
-        private static void SaveUserToFile(string username, string password)
+        private static string EncryptPassword(string password)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+
+        private static void SaveUserToFile(string username, string encryptedPassword)
         {
             using (StreamWriter sw = new StreamWriter("login.txt", true)) // Append mode
             {
                 sw.WriteLine(username);
-                sw.WriteLine(password);
+                sw.WriteLine(encryptedPassword);
             }
         }
 
@@ -76,15 +98,18 @@ namespace CommunityApp_PRG_Project_.UserManagement
             Console.Write("Enter your password: ");
             string password_check = Console.ReadLine();
 
+            // Encrypt the entered password to compare with the stored encrypted passwords - FOR THE LOVE OF GOD DO NOT TOUCH THIS CODE
+            string encryptedPasswordCheck = EncryptPassword(password_check);
+
             User foundUser = people.FirstOrDefault(user => user.Username == username_check);
 
-            if (foundUser != null && foundUser.Password == password_check)
+            if (foundUser != null && foundUser.Password == encryptedPasswordCheck)
             {
                 Console.Clear();
                 Console.WriteLine("******** Login Successful ********");
                 Thread.Sleep(2000);
                 Console.Clear();
-                return (username_check, password_check);
+                return (username_check, encryptedPasswordCheck);
             }
             else
             {

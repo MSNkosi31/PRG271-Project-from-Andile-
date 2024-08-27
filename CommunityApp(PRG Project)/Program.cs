@@ -97,7 +97,7 @@ namespace CommunityApp_PRG_Project_
                 new User("1", "1")
             };
 
-            Console.WriteLine("Welcome to Retardville's Community App");
+            Console.WriteLine("Welcome to thw My Community App");
             Console.WriteLine("To sign in press 1 and to login press 2");
 
             int result;
@@ -134,7 +134,15 @@ namespace CommunityApp_PRG_Project_
 
         static (string, string) Login(List<User> people)
         {
-            return User.Login(people);
+            try
+            {
+                return User.Login(people);
+            }
+            catch (InvalidLoginException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return Login(people); // Retry login
+            }
         }
 
         static void OnEventAdded(Event newEvent)
