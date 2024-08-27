@@ -17,6 +17,7 @@ namespace CommunityApp_PRG_Project_.EventManagement
 
         public void EventMenu()
         {
+            Console.Clear();
             Console.WriteLine("===== Event Management =====");
             Console.WriteLine("1. Create Event");
             Console.WriteLine("2. List Events");
@@ -58,6 +59,8 @@ namespace CommunityApp_PRG_Project_.EventManagement
 
         private void CreateEvent()
         {
+            Console.Clear();
+            Console.WriteLine("===== Add an Event =====");
             Console.Write("Enter event name: ");
             string eventName = Console.ReadLine();
 
@@ -77,7 +80,8 @@ namespace CommunityApp_PRG_Project_.EventManagement
 
         private void RSVPToEvent()
         {
-            Console.WriteLine("\n===== RSVP to an Event =====");
+            Console.Clear();
+            Console.WriteLine("===== RSVP to an Event =====");
 
             if (eventCalendar.Events.Count == 0)
             {

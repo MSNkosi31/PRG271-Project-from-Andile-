@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="CommunityApp_PRG_Project_.UserManagement.User" Collapsed="true">
+  <Class Name="CommunityApp_PRG_Project_.UserManagement.User">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAgBCAAAAQAAAAAAAAAACAACAAAQAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAgBCAAAAQAAAAAAgAAACAACAAAQAAAAAAA=</HashCode>
       <FileName>UserManagement\User.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CommunityApp_PRG_Project_.Program" Collapsed="true">
+  <Class Name="CommunityApp_PRG_Project_.Program">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <NestedTypes>
       <Enum Name="CommunityApp_PRG_Project_.Program.MainMenu" Collapsed="true">
@@ -27,7 +27,7 @@
       <HashCode>AAAAAAAAAAIAAAAAAABAIAAAAAAAAAAAABAAAAABAAI=</HashCode>
       <FileName>JobFinder\JobFinderService.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.648" Collapsed="true" />
+    <Lollipop Position="0.742" Collapsed="true" />
   </Class>
   <Class Name="CommunityApp_PRG_Project_.JobFinder.Job" Collapsed="true">
     <Position X="6.5" Y="3.25" Width="1.5" />
@@ -50,7 +50,7 @@
       <FileName>JobFinder\Applicant.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CommunityApp_PRG_Project_.GroupChat.Message" Collapsed="true">
+  <Class Name="CommunityApp_PRG_Project_.GroupChat.Message">
     <Position X="8.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAEAAACAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
@@ -92,7 +92,7 @@
       <FileName>EventManagement\Event.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="CommunityApp_PRG_Project_.JobFinder.IJobFinder" Collapsed="true">
+  <Interface Name="CommunityApp_PRG_Project_.JobFinder.IJobFinder">
     <Position X="6.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAABAIAAAAAAAAAAAABAAAAABAAI=</HashCode>

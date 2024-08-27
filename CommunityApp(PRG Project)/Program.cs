@@ -15,7 +15,7 @@ namespace CommunityApp_PRG_Project_
         {
             Events = 1,
             Job_Finder,
-            Group_Chat,
+            City_Group_Chat,
             Exit
         }
 
@@ -27,7 +27,7 @@ namespace CommunityApp_PRG_Project_
 
         public static void Menu(EventManager eventManager)
         {
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Clear();
             DisplayAsciiArt();
 
             Console.WriteLine("===== Main Menu =====");
@@ -38,7 +38,8 @@ namespace CommunityApp_PRG_Project_
                 string splitName = MenuOption.ToString().Replace('_', ' ');
                 Console.WriteLine("To access the {0} function, press {1}", splitName, (int)MenuOption);
             }
-
+            redo:
+            Console.Write("Enter your choice: ");
             if (int.TryParse(Console.ReadLine(), out int option))
             {
                 switch (option)
@@ -54,10 +55,11 @@ namespace CommunityApp_PRG_Project_
                         break;
                     case 4:
                         Console.WriteLine("Exiting...");
+                        Thread.Sleep(2000);
                         return;
                     default:
                         Console.WriteLine("Invalid option. Please try again.");
-                        break;
+                        goto redo;
                 }
             }
             else
@@ -88,41 +90,43 @@ namespace CommunityApp_PRG_Project_
 
         static void Main(string[] args)
         {
-            List<User> people = new List<User>
-            {
-                new User("Tumi", "adminT"),
-                new User("Andile", "adminA"),
-                new User("Suhil", "adminS"),
-                new User("Reinhard", "adminR"),
-                new User("1", "1")
-            };
+            Console.ForegroundColor = ConsoleColor.Green;
+            List<User> people = new List<User>{ };
 
-            Console.WriteLine("Welcome to thw My Community App");
-            Console.WriteLine("To sign in press 1 and to login press 2");
-
-            int result;
-            string choice;
-            do
+            Console.WriteLine("Welcome to the My Community App");
+            Console.WriteLine("To sign in press 1 OR to login press 2");
+        redo:
+            Console.Write("Enter your choice: ");
+            if (int.TryParse(Console.ReadLine(), out int option))
             {
-                choice = Console.ReadLine();
-            } while (!int.TryParse(choice, out result) || (result != 1 && result != 2));
+                switch (option)
+                {
+                    case 1:
+                        var signedUser = User.SignUp();
+                        User newUser = new User(signedUser.Item1, signedUser.Item2);
+                        people.Add(newUser);
+                        Console.Clear();
+                        Console.WriteLine("******** Sign Up Successful ********");
+                        Thread.Sleep(2000);
+                        Console.Clear();
+                        Login(people);
+                        break;
 
-            if (result == 1)
-            {
-                var signedUser = User.SignUp();
-                User newUser = new User(signedUser.Item1, signedUser.Item2);
-                people.Add(newUser);
-                Console.Clear();
-                Console.WriteLine("******** Sign Up Successful ********");
-                Thread.Sleep(2000);
-                Console.Clear();
-                Login(people);
+                    case 2:
+                        Login(people);
+                        break;
+
+                    default:
+                        Console.WriteLine("Enter either 1 or 2, not spelt out, just the number");
+                        goto redo;
+                }
+                
             }
-            else if (result == 2)
+            else
             {
-                Login(people);
+                Console.WriteLine("Enter either 1 or 2, not spelt out, just the number");
+                goto redo;
             }
-
             EventCalendar calendar = new EventCalendar();
             calendar.LoadEventsFromFile();
             calendar.LoadRSVPsFromFile();
@@ -152,11 +156,12 @@ namespace CommunityApp_PRG_Project_
 
         static void JobFinderMenu()
         {
+            Console.Clear();
             bool exit = false;
 
             while (!exit)
             {
-                Console.WriteLine("Job Portal Menu:");
+                Console.WriteLine("======Job Portal Menu======");
                 Console.WriteLine("1. Add Employer");
                 Console.WriteLine("2. Add Applicant");
                 Console.WriteLine("3. Add Job");
@@ -164,6 +169,7 @@ namespace CommunityApp_PRG_Project_
                 Console.WriteLine("5. List Applicants");
                 Console.WriteLine("6. List Jobs");
                 Console.WriteLine("7. Exit");
+                redo:
                 Console.Write("Choose an option: ");
                 string pick = Console.ReadLine();
 
@@ -192,7 +198,7 @@ namespace CommunityApp_PRG_Project_
                         break;
                     default:
                         Console.WriteLine("Invalid choice. Please try again.");
-                        break;
+                        goto redo;
                 }
             }
         }
