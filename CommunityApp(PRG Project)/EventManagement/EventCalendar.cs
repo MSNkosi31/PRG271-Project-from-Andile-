@@ -90,8 +90,9 @@ namespace CommunityApp_PRG_Project_.EventManagement
 
         public void ListEvents()
         {
-            Console.WriteLine("======List Of Events======");
             Console.Clear();
+            Console.WriteLine("======List Of Events======");
+          
             if (Events.Count == 0)
             {
                 Console.WriteLine("No upcoming events.");
